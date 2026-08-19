@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dra. Kimberly Vieira | Harmonização Orofacial & Odontologia Estética em Curitiba</title>
+  <meta name="description" content="Especialista em Harmonização Orofacial e Odontologia Estética em Curitiba. Botox, Preenchimento com Ácido Hialurônico, Bioestimuladores de Colágeno e Lentes em Resina com naturalidade e segurança. CRO/PR 34185.">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
+  
+  <!-- Material Symbols -->
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#785346",
+            "primary-dark": "#5a3c31",
+            "primary-container": "#936b5d",
+            "on-primary": "#ffffff",
+            "secondary": "#695b58",
+            "secondary-container": "#f2ded9",
+            "on-secondary-container": "#6f615d",
+            "tertiary": "#5c5c5c",
+            "tertiary-container": "#757474",
+            "dusty-rose": "#D4B1A7",
+            "soft-clay": "#C4A499",
+            "surface": "#fbf9f8",
+            "surface-dim": "#dbdad9",
+            "surface-container-low": "#f5f3f2",
+            "surface-container": "#efedec",
+            "surface-container-high": "#e9e8e7",
+            "surface-container-highest": "#e4e2e1",
+            "on-surface": "#1b1c1b",
+            "on-surface-variant": "#504440",
+            "deep-charcoal": "#1A1A1A",
+            "clinical-white": "#FFFFFF",
+            "outline": "#83746f",
+            "outline-variant": "#d5c3bd"
+          },
+          fontFamily: {
+            "serif": ["Playfair Display", "Georgia", "serif"],
+            "sans": ["Manrope", "system-ui", "sans-serif"],
+            "display": ["Playfair Display", "Georgia", "serif"],
+            "body": ["Manrope", "sans-serif"]
+          },
+          spacing: {
+            "margin-desktop": "5rem",
+            "margin-mobile": "1.5rem",
+            "section-gap": "6rem",
+            "gutter": "2rem"
+          }
+        }
+      }
+    }
+  </script>
+  
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="bg-surface text-on-surface font-sans antialiased overflow-x-hidden selection:bg-primary-container selection:text-white">
+
+  <!-- Top Navigation Bar -->
+  <header class="fixed top-0 left-0 w-full z-50 bg-surface/90 backdrop-blur-md border-b border-outline-variant/40 transition-all duration-300">
+    <div class="max-w-[1400px] mx-auto px-6 md:px-12 py-4 flex items-center justify-between">
+      <!-- Brand / Logo -->
+      <a href="index.html" class="flex items-center gap-3 group">
+        <div class="w-10 h-10 rounded-full bg-secondary-container/80 flex items-center justify-center border border-primary/20 group-hover:scale-105 transition-transform">
+          <span class="font-serif text-primary font-bold text-lg">KV</span>
+        </div>
+        <div class="flex flex-col">
+          <span class="font-serif text-lg md:text-xl tracking-wider text-on-surface font-semibold">Dra. Kimberly Vieira</span>
+          <span class="text-[10px] uppercase tracking-[0.2em] text-primary -mt-1 font-medium">Harmonização & Odontologia</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-on-surface-variant">
+        <a href="index.html" class="text-primary font-semibold border-b-2 border-primary pb-1 transition-colors">Início</a>
+        <a href="procedimentos.html" class="hover:text-primary transition-colors py-1">Procedimentos</a>
+        <a href="sobre.html" class="hover:text-primary transition-colors py-1">Sobre Mim</a>
+        <a href="contato.html" class="hover:text-primary transition-colors py-1">Contato & Agendamento</a>
+      </nav>
+
+      <!-- CTA Button -->
+      <div class="hidden lg:flex items-center gap-4">
+        <a href="contato.html" class="inline-flex items-center gap-2 bg-deep-charcoal hover:bg-primary text-clinical-white text-xs font-semibold uppercase tracking-[0.15em] px-6 py-3 rounded transition-all duration-300 shadow-sm hover:shadow-md">
+          <span>Agendar Consulta</span>
+          <span class="material-symbols-outlined text-base">calendar_month</span>
+        </a>
+      </div>
+
+      <!-- Mobile Hamburger Button -->
+      <button type="button" data-toggle-menu class="md:hidden text-on-surface p-2 rounded-lg hover:bg-secondary-container/50 transition-colors focus:outline-none" aria-label="Abrir Menu">
+        <span class="material-symbols-outlined text-3xl">menu</span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Menu Drawer & Backdrop -->
+  <div id="mobile-menu-backdrop" class="fixed inset-0 bg-deep-charcoal/60 backdrop-blur-sm z-50 opacity-0 pointer-events-none transition-opacity duration-300"></div>
+  <aside id="mobile-menu" class="fixed top-0 right-0 h-full w-[80%] max-w-sm bg-surface z-50 transform translate-x-full transition-transform duration-300 ease-in-out flex flex-col justify-between p-8 border-l border-outline-variant/40 shadow-2xl">
+    <div>
+      <div class="flex items-center justify-between pb-6 border-b border-outline-variant/40">
+        <div class="flex items-center gap-2">
+          <div class="w-8 h-8 rounded-full bg-secondary-container flex items-center justify-center font-serif text-primary font-bold text-sm">KV</div>
+          <span class="font-serif font-semibold text-base text-on-surface">Dra. Kimberly Vieira</span>
+        </div>
+        <button type="button" data-close-menu class="p-2 text-on-surface hover:bg-secondary-container rounded-full" aria-label="Fechar Menu">
+          <span class="material-symbols-outlined">close</span>
+        </button>
+      </div>
+
+      <nav class="flex flex-col gap-4 mt-8 text-base font-medium">
+        <a href="index.html" class="text-primary font-semibold py-2 px-3 rounded-lg bg-secondary-container/40">Início</a>
+        <a href="procedimentos.html" class="text-on-surface-variant hover:text-primary py-2 px-3 rounded-lg hover:bg-secondary-container/30 transition-colors">Procedimentos</a>
+        <a href="sobre.html" class="text-on-surface-variant hover:text-primary py-2 px-3 rounded-lg hover:bg-secondary-container/30 transition-colors">Sobre Mim</a>
+        <a href="contato.html" class="text-on-surface-variant hover:text-primary py-2 px-3 rounded-lg hover:bg-secondary-container/30 transition-colors">Contato & Localização</a>
+      </nav>
+    </div>
+
+    <div class="space-y-4 pt-6 border-t border-outline-variant/40">
+      <a href="https://wa.me/554196541288?text=Ol%C3%A1%2C%20Dra.%20Kimberly!%20Gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o." target="_blank" class="w-full inline-flex items-center justify-center gap-2 bg-[#25D366] text-white text-sm font-semibold uppercase tracking-wider py-3.5 rounded shadow-sm">
+        <span class="material-symbols-outlined text-lg">chat</span>
+        <span>WhatsApp (41) 9654-1288</span>
+      </a>
+      <p class="text-center text-xs text-on-surface-variant">CRO/PR 34185 | Batel, Curitiba</p>
+    </div>
+  </aside>
+
+  <main>
+    <!-- HERO SECTION (Fullscreen 100vw x 100dvh) -->
+    <section class="hero relative w-full min-h-screen min-h-[100dvh] flex items-center justify-center overflow-hidden bg-surface">
+      <!-- Background Image with Soft Luxury Gradient -->
+      <div class="absolute inset-0 w-full h-full z-0 pointer-events-none">
+        <img src="assets/images/hero_dra_kimberly.jpg" 
+             alt="Dra. Kimberly Vieira em seu consultório no Batel" 
+             class="w-full h-full object-cover object-[center_20%] md:object-[right_30%]">
+        <!-- Gradient overlay for high legibility -->
+        <div class="absolute inset-0 bg-gradient-to-r from-surface via-surface/90 to-transparent md:w-[60%]"></div>
+        <div class="absolute inset-0 bg-gradient-to-t from-surface via-transparent to-surface/30 md:hidden"></div>
+      </div>
+
+      <!-- Hero Content Container -->
+      <div class="relative z-10 max-w-[1400px] mx-auto w-full px-6 md:px-12 py-24 flex flex-col justify-center min-h-[100dvh]">
+        <div class="max-w-2xl space-y-6 reveal active">
+          <!-- Tagline -->
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-secondary-container/80 border border-primary/20 backdrop-blur-sm">
+            <span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+            <span class="text-xs font-semibold tracking-widest text-primary uppercase">CRO/PR 34185 • Batel, Curitiba</span>
+          </div>
+
+          <!-- Main Title -->
+          <h1 class="font-serif text-4xl sm:text-5xl lg:text-6xl text-deep-charcoal leading-[1.15] font-semibold">
+            A arte de revelar a sua <br>
+            <span class="text-primary italic font-normal">melhor versão</span>
+          </h1>
+
+          <!-- Subtitle -->
+          <p class="text-base sm:text-lg text-on-surface-variant leading-relaxed max-w-xl font-normal">
+            Procedimentos estéticos faciais e odontológicos de alto padrão. Excelência clínica, planejamento individualizado e resultados sutis que elevam sua autoestima com naturalidade e segurança.
+          </p>
+
+          <!-- Action Buttons -->
+          <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 pt-4">
+            <a href="contato.html" class="inline-flex items-center justify-center gap-2 bg-deep-charcoal hover:bg-primary text-clinical-white text-xs font-semibold uppercase tracking-[0.15em] px-8 py-4 rounded shadow-lg shadow-primary/20 transition-all duration-300">
+              <span>Agendar Avaliação</span>
+              <span class="material-symbols-outlined text-sm">calendar_month</span>
+            </a>
+            <a href="procedimentos.html" class="inline-flex items-center justify-center gap-2 border border-primary text-primary hover:bg-secondary-container/50 text-xs font-semibold uppercase tracking-[0.15em] px-8 py-4 rounded transition-all duration-300">
+              <span>Conhecer Tratamentos</span>
+              <span class="material-symbols-outlined text-sm">arrow_forward</span>
+            </a>
+          </div>
+
+          <!-- Quick Stats / Authority Highlights -->
+          <div class="grid grid-cols-3 gap-4 pt-6 border-t border-outline-variant/40 max-w-lg">
+            <div>
+              <span class="block font-serif text-2xl md:text-3xl font-bold text-primary">100%</span>
+              <span class="text-xs text-on-surface-variant uppercase tracking-wider">Personalizado</span>
+            </div>
+            <div>
+              <span class="block font-serif text-2xl md:text-3xl font-bold text-primary">Natural</span>
+              <span class="text-xs text-on-surface-variant uppercase tracking-wider">Sem Exageros</span>
+            </div>
+            <div>
+              <span class="block font-serif text-2xl md:text-3xl font-bold text-primary">Batel</span>
+              <span class="text-xs text-on-surface-variant uppercase tracking-wider">Curitiba - PR</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PHILOSOPHY / INTRO SECTION -->
+    <section class="py-20 md:py-28 bg-surface-container-low relative" id="sobre">
+      <div class="max-w-[1300px] mx-auto px-6 md:px-12">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+          <!-- Text column -->
+          <div class="lg:col-span-6 space-y-6 reveal">
+            <span class="text-xs font-bold uppercase tracking-[0.2em] text-soft-clay">Nossa Filosofia</span>
+            <h2 class="font-serif text-3xl sm:text-4xl text-on-surface font-semibold leading-tight">
+              Equilíbrio, Segurança e <span class="italic text-primary font-normal">Sofisticação</span>
+            </h2>
+            <div class="w-16 h-0.5 bg-primary/40"></div>
+            <p class="text-on-surface-variant leading-relaxed text-base">
+              Como especialista em Harmonização Orofacial e Odontologia Estética, acredito que a verdadeira beleza reside na harmonia das proporções e na preservação da identidade única de cada paciente.
+            </p>
+            <p class="text-on-surface-variant leading-relaxed text-base">
+              Cada plano de tratamento é desenhado com rigor anatômico e produtos de altíssima pureza e certificação internacional. Tudo em um consultório elegante no Batel, planejado para oferecer uma experiência acolhedora e exclusiva.
+            </p>
+            <div class="pt-4">
+              <a href="sobre.html" class="inline-flex items-center gap-2 text-primary hover:text-primary-dark font-semibold text-sm tracking-wider uppercase group">
+                <span>Conheça a trajetória da Dra. Kimberly</span>
+                <span class="material-symbols-outlined text-base group-hover:translate-x-1 transition-transform">arrow_forward</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Visual Gallery column -->
+          <div class="lg:col-span-6 relative reveal reveal-delay-200">
+            <div class="absolute -inset-4 bg-gradient-to-tr from-secondary-container/40 to-surface/30 rounded-3xl -rotate-1 pointer-events-none"></div>
+            <div class="relative z-10 grid grid-cols-2 gap-4 sm:gap-6">
+              <div class="rounded-2xl overflow-hidden shadow-sm border border-outline-variant/30 h-72 sm:h-80">
+                <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDBj6_RNPIzM_-iLNDJbXTEWBJw9wqC1HnX0TgoHFHJB0oTMbkhQnXIdJSQC_IZquOMoJ4UZOg8lVUtMibnnM35Ewkb6qWOPwd1CWExdFX5cvtm6DtGmIE7Siemg7GF2SPdX3paoFbeAFqgWCjGSFF4ESoBftaAX-d83F8xMu1iIIO6LzgrYJDtuPshJDdABZ6oOXrDJFOkcnIxOSgqSNvR7c_xAVDzfJROO3warmGhD0a_ga2oLqZA" 
+                     alt="Procedimento estético seguro e preciso" 
+                     class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+              </div>
+              <div class="rounded-2xl overflow-hidden shadow-sm border border-outline-variant/30 h-72 sm:h-80 mt-6 sm:mt-10">
+                <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBY3EoPxOGUqxtK_uMJo_mvIWqh1SyEzV_CJ0M5DIkKchXbk0wSIqemgUbMOFhlEcC5fKRgZXiuiaju18RhK74qWTtAh6QAFq9FGfLB8qPTx-SALC1aV-4i3CO4qW2IajSKt7sXByZHOKerDoQcH--oGaM42AVeX6DKHxoWBaeI-W75CGFJdA9bVO8yCYikKf8KrkNbl4Bdm4zDwRa95LjWMFIR4-tWkq5fsrPmcS0IlelYdYbhgRGU" 
+                     alt="Sorriso natural e harmonioso" 
+                     class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROCEDURES HIGHLIGHTS (Bento Grid) -->
+    <section class="py-20 md:py-28 max-w-[1300px] mx-auto px-6 md:px-12" id="procedimentos">
+      <div class="text-center max-w-2xl mx-auto mb-16 space-y-3 reveal">
+        <span class="text-xs font-bold uppercase tracking-[0.2em] text-primary">Especialidades</span>
+        <h2 class="font-serif text-3xl sm:text-4xl font-semibold text-deep-charcoal">Procedimentos em Destaque</h2>
+        <div class="w-16 h-0.5 bg-primary/40 mx-auto"></div>
+        <p class="text-on-surface-variant text-sm sm:text-base">Técnicas modernas que valorizam sua beleza de forma personalizada e segura.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 auto-rows-[280px]">
+        <!-- Bento Item 1: Harmonização Facial (2 cols, 2 rows on desktop) -->
+        <div class="md:col-span-2 md:row-span-2 rounded-2xl overflow-hidden relative group cursor-pointer border border-outline-variant/40 shadow-sm reveal">
+          <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAPu7D5yWsRTYGndez7uTSp_-qMAsETZJgcUTYSmC369AUcSbY4MAgDFzu-JZRIXsgY6hLq0gNQLJ_k1hY0p-r9jujCXNF4rNqo2NveBE3oRl5R7LTOZaIB1RU6mCmevvZrb6gDDV8sl6zfJgkq-aUHr67s96Ww30HPOL5CnZMIx1VPhPvZp1i6fNs3-sKTeawT4c4JQw_mvKi-Y-FeyNyHX0gg4z549SV1MmQRhAu6jZLKKHfUMpOG" 
+               alt="Harmonização Facial e planejamento estético" 
+               class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+          <div class="absolute inset-0 bg-gradient-to-t from-deep-charcoal/95 via-deep-charcoal/40 to-transparent"></div>
+          <div class="absolute bottom-0 left-0 p-8 w-full z-10 space-y-2">
+            <div class="flex flex-wrap gap-2">
+              <span class="bg-secondary-container/90 text-primary-dark px-3 py-1 rounded text-xs font-semibold uppercase tracking-wider backdrop-blur-sm">Botox</span>
+              <span class="bg-secondary-container/90 text-primary-dark px-3 py-1 rounded text-xs font-semibold uppercase tracking-wider backdrop-blur-sm">Ácido Hialurônico</span>
+              <span class="bg-secondary-container/90 text-primary-dark px-3 py-1 rounded text-xs font-semibold uppercase tracking-wider backdrop-blur-sm">Malar & Mento</span>
+            </div>
+            <h3 class="font-serif text-2xl sm:text-3xl text-clinical-white font-semibold">Harmonização Facial Completa</h3>
+            <p class="text-surface-container-low text-sm sm:text-base max-w-lg opacity-90 transition-opacity">
+              Técnicas avançadas para rejuvenescer, contornar e devolver sustentação à face, preservando sua essência com naturalidade.
+            </p>
+            <a href="procedimentos.html" class="inline-flex items-center gap-1 text-dusty-rose hover:text-white font-semibold text-xs uppercase tracking-widest pt-2">
+              <span>Ver detalhes do procedimento</span>
+              <span class="material-symbols-outlined text-sm">arrow_forward</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Bento Item 2: Lentes em Resina & Odontologia Estética -->
+        <div class="rounded-2xl overflow-hidden relative group cursor-pointer bg-surface-container-low border border-outline-variant/40 p-6 flex flex-col justify-between shadow-sm hover:shadow-md transition-all duration-300 reveal reveal-delay-100">
+          <div class="w-12 h-12 rounded-xl bg-secondary-container flex items-center justify-center text-primary shadow-sm">
+            <span class="material-symbols-outlined text-2xl">dentistry</span>
+          </div>
+          <div class="space-y-2">
+            <span class="text-xs uppercase tracking-wider font-semibold text-primary">Odontologia Estética</span>
+            <h3 class="font-serif text-xl font-semibold text-on-surface group-hover:text-primary transition-colors">Lentes em Resina & Clareamento</h3>
+            <p class="text-on-surface-variant text-xs sm:text-sm line-clamp-3">
+              Transformação conservadora e harmônica do sorriso, corrigindo cor, anatomia e alinhamento dos dentes.
+            </p>
+            <a href="procedimentos.html" class="inline-flex items-center gap-1 text-primary text-xs font-semibold uppercase tracking-wider pt-1">
+              <span>Saiba mais</span>
+              <span class="material-symbols-outlined text-xs">arrow_forward</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Bento Item 3: Bioestimuladores de Colágeno -->
+        <div class="rounded-2xl overflow-hidden relative group cursor-pointer border border-outline-variant/40 shadow-sm reveal reveal-delay-200">
+          <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDHae6Kn4-hGF2eL_reV025BiGlwu364c4QWW61lO0TwdK4I_a0eyCIrEXK7Je5zOO8-i6UW5K-ZPXbs1M4FJ9ZIttsGMJxl8XSAFmzyHwjmExKwJlLacMP3mc-D7BuwVFM8R52MCQAYEr8p8-V9itgHErE-9PaJ2Fgy4uHwcRha2-gayoAUz4JqVsTNBmzra8GKzMVIrCilOYMFWM2dfyN4bNTaZ3kBYmeCWigQFXR_IxZhPjyIRCM" 
+               alt="Bioestimuladores de colágeno" 
+               class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+          <div class="absolute inset-0 bg-gradient-to-t from-deep-charcoal/90 via-deep-charcoal/30 to-transparent"></div>
+          <div class="absolute bottom-0 left-0 p-6 z-10 w-full space-y-1">
+            <span class="text-xs uppercase tracking-wider font-semibold text-dusty-rose">Firmeza & Estímulo</span>
+            <h3 class="font-serif text-xl font-semibold text-clinical-white">Bioestimuladores</h3>
+            <p class="text-surface-container-low text-xs line-clamp-2">Recuperação da densidade dérmica e combate à flacidez de forma progressiva.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center mt-12 reveal">
+        <a href="procedimentos.html" class="inline-flex items-center gap-2 border-b-2 border-primary text-primary font-semibold text-sm tracking-wider uppercase pb-1 hover:text-primary-dark transition-colors">
+          <span>Ver catálogo completo de tratamentos</span>
+          <span class="material-symbols-outlined text-base">arrow_forward</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- RESULTS & TRANSFORMATIONS (Lightbox Gallery) -->
+    <section class="py-20 md:py-28 bg-surface-container-lowest border-y border-outline-variant/30" id="resultados">
+      <div class="max-w-[1300px] mx-auto px-6 md:px-12">
+        <div class="text-center max-w-2xl mx-auto mb-16 space-y-3 reveal">
+          <span class="text-xs font-bold uppercase tracking-[0.2em] text-primary">Resultados Clínicos</span>
+          <h2 class="font-serif text-3xl sm:text-4xl font-semibold text-deep-charcoal">Transformações Reais</h2>
+          <div class="w-16 h-0.5 bg-primary/40 mx-auto"></div>
+          <p class="text-on-surface-variant text-sm sm:text-base">Clique nas fotos para visualizar em tamanho ampliado.</p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <!-- Photo 1 -->
+          <div class="group relative aspect-square rounded-2xl overflow-hidden shadow-sm border border-outline-variant/30 cursor-pointer reveal" 
+               data-lightbox 
+               data-lightbox-src="https://lh3.googleusercontent.com/aida-public/AB6AXuBCv-tD2GDur1BAiOYP5myzQ2lXl7KG1pxvuqYdszLBi6ggIU77dF_017MmijM1IhY3SJ0OZFEmMj7kKkqN2mB_FGArMUNQgeH3ipkE6ZvcHDXSE9X_OVaAZ0tWqYzZmzWt99hjDAuwUWzgbrqK8uB_Vfyuv8qKxSOFQ3ob0H7x6SNsA9E34_TgINqvUAyXu2xpNJe0q73uqKdKTlC1K4IU-bQBL8eJ6FZU3tYxqgSl6kcCi5cpMrM2UGT-bFutBlwRPQ"
+               data-lightbox-alt="Harmonização Orofacial - Resultado Antes e Depois">
+            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBCv-tD2GDur1BAiOYP5myzQ2lXl7KG1pxvuqYdszLBi6ggIU77dF_017MmijM1IhY3SJ0OZFEmMj7kKkqN2mB_FGArMUNQgeH3ipkE6ZvcHDXSE9X_OVaAZ0tWqYzZmzWt99hjDAuwUWzgbrqK8uB_Vfyuv8qKxSOFQ3ob0H7x6SNsA9E34_TgINqvUAyXu2xpNJe0q73uqKdKTlC1K4IU-bQBL8eJ6FZU3tYxqgSl6kcCi5cpMrM2UGT-bFutBlwRPQ" 
+                 alt="Harmonização Orofacial - Antes e Depois" 
+                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+            <div class="absolute inset-0 bg-deep-charcoal/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+              <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
+            </div>
+            <div class="absolute bottom-3 left-3 bg-surface/90 backdrop-blur-sm px-3 py-1 rounded text-[11px] font-semibold text-primary uppercase tracking-wider">
+              Harmonização Facial
+            </div>
+          </div>
+
+          <!-- Photo 2 -->
+          <div class="group relative aspect-square rounded-2xl overflow-hidden shadow-sm border border-outline-variant/30 cursor-pointer reveal reveal-delay-100" 
+               data-lightbox 
+               data-lightbox-src="https://lh3.googleusercontent.com/aida-public/AB6AXuBkXdzvl4yQYaO8IbEP1Fp6G2AbN3BGYYeYicd8KotbHtiKH8dJu93AKc8mcZQYO_-cU6N8tjW4O9mhlFBS3CrU9qISZj2WoDkhuEioQcgvuJKr_mRvTAmHIDa8Stt_ET1pPLpJB-1ZdWxI-x9bsb8LDh7PpoaQBBqsHE2Cu8B_eMwziFIeVyy6HBtqP9-Z_TjPbqy4yLTkqA7uGAnG87GRfXKtxhtDDlwmroNNA-OvZXgEBxOQcJuGel-55aaqph25dQ"
+               data-lightbox-alt="Lentes em Resina - Transformação do Sorriso">
+            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBkXdzvl4yQYaO8IbEP1Fp6G2AbN3BGYYeYicd8KotbHtiKH8dJu93AKc8mcZQYO_-cU6N8tjW4O9mhlFBS3CrU9qISZj2WoDkhuEioQcgvuJKr_mRvTAmHIDa8Stt_ET1pPLpJB-1ZdWxI-x9bsb8LDh7PpoaQBBqsHE2Cu8B_eMwziFIeVyy6HBtqP9-Z_TjPbqy4yLTkqA7uGAnG87GRfXKtxhtDDlwmroNNA-OvZXgEBxOQcJuGel-55aaqph25dQ" 
+                 alt="Lentes em Resina - Transformação do Sorriso" 
+                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+            <div class="absolute inset-0 bg-deep-charcoal/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+              <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
+            </div>
+            <div class="absolute bottom-3 left-3 bg-surface/90 backdrop-blur-sm px-3 py-1 rounded text-[11px] font-semibold text-primary uppercase tracking-wider">
+              Lentes em Resina
+            </div>
+          </div>
+
+          <!-- Photo 3 -->
+          <div class="group relative aspect-square rounded-2xl overflow-hidden shadow-sm border border-outline-variant/30 cursor-pointer reveal reveal-delay-200" 
+               data-lightbox 
+               data-lightbox-src="https://lh3.googleusercontent.com/aida-public/AB6AXuDyJyZ9y3w5xNT_VDCWEPJVNBPXTT_qBBJG126rr4CZnT1po0eLW8rdMzffeKWEyNUi0Ca4NVa5Qmt2eKORJ_wAg2t5fzfsSc9rLUsvAfnvSS1RhLwTAFrC3LhVy05DoCtA1TZmmDwHhCpZIgHCBCj0a6qdc2aIYJnO0_6yWGegqiHPIH94iRmzvOY8xi7qFx1yvWB-1B1wfX46CWfwHYSKwTXC76wMFQWdeaSC4lt3uKiAb0XSQEw6jQOFoF0ez2_eNQ"
+               data-lightbox-alt="Preenchimento Labial com Ácido Hialurônico">
+            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDyJyZ9y3w5xNT_VDCWEPJVNBPXTT_qBBJG126rr4CZnT1po0eLW8rdMzffeKWEyNUi0Ca4NVa5Qmt2eKORJ_wAg2t5fzfsSc9rLUsvAfnvSS1RhLwTAFrC3LhVy05DoCtA1TZmmDwHhCpZIgHCBCj0a6qdc2aIYJnO0_6yWGegqiHPIH94iRmzvOY8xi7qFx1yvWB-1B1wfX46CWfwHYSKwTXC76wMFQWdeaSC4lt3uKiAb0XSQEw6jQOFoF0ez2_eNQ" 
+                 alt="Preenchimento Labial" 
+                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+            <div class="absolute inset-0 bg-deep-charcoal/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+              <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
+            </div>
+            <div class="absolute bottom-3 left-3 bg-surface/90 backdrop-blur-sm px-3 py-1 rounded text-[11px] font-semibold text-primary uppercase tracking-wider">
+              Preenchimento Labial
+            </div>
+          </div>
+
+          <!-- Photo 4 -->
+          <div class="group relative aspect-square rounded-2xl overflow-hidden shadow-sm border border-outline-variant/30 cursor-pointer reveal reveal-delay-300" 
+               data-lightbox 
+               data-lightbox-src="https://lh3.googleusercontent.com/aida-public/AB6AXuCR0Yjc_msL6u3tMnqku086lQbjJXbqNVQIrYCEpXwauhXJ-skkTdY1qEMPuTZIB0zY7D9bD03xGZTsbjZ7VJDEke1f22nBzP3xg-hzD--jEPLsb26YtG9iUQpH6WumzvJ6a6L62XQM82a8JL4L8oiR_HMpH8PgIa7B5nQ-x002I0tQpAIeoRp7pl7YE0qOOcSFdsIl_LSrftWadLmk7qyzM_y3EHFeGEnh7HZXARZxUdVtFpMHGtbleMOUbSv7adtU6w"
+               data-lightbox-alt="Contorno Facial e Simetria Orofacial">
+            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCR0Yjc_msL6u3tMnqku086lQbjJXbqNVQIrYCEpXwauhXJ-skkTdY1qEMPuTZIB0zY7D9bD03xGZTsbjZ7VJDEke1f22nBzP3xg-hzD--jEPLsb26YtG9iUQpH6WumzvJ6a6L62XQM82a8JL4L8oiR_HMpH8PgIa7B5nQ-x002I0tQpAIeoRp7pl7YE0qOOcSFdsIl_LSrftWadLmk7qyzM_y3EHFeGEnh7HZXARZxUdVtFpMHGtbleMOUbSv7adtU6w" 
+                 alt="Contorno Facial" 
+                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+            <div class="absolute inset-0 bg-deep-charcoal/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+              <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
+            </div>
+            <div class="absolute bottom-3 left-3 bg-surface/90 backdrop-blur-sm px-3 py-1 rounded text-[11px] font-semibold text-primary uppercase tracking-wider">
+              Contorno & Simetria
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS (Relatos de Autoestima) -->
+    <section class="py-20 md:py-28 bg-surface" id="depoimentos">
+      <div class="max-w-[1300px] mx-auto px-6 md:px-12">
+        <div class="text-center max-w-2xl mx-auto mb-16 space-y-3 reveal">
+          <span class="text-xs font-bold uppercase tracking-[0.2em] text-primary">Depoimentos</span>
+          <h2 class="font-serif text-3xl sm:text-4xl font-semibold text-deep-charcoal">Relatos de Autoestima</h2>
+          <div class="w-16 h-0.5 bg-primary/40 mx-auto"></div>
+          <p class="text-on-surface-variant text-sm sm:text-base">A satisfação e o sorriso renovado de quem confiou em nosso trabalho.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Testimonial 1 -->
+          <div class="bg-surface-container-low p-8 rounded-2xl border border-outline-variant/30 shadow-sm relative hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between reveal">
+            <div>
+              <div class="flex items-center gap-1 mb-4 text-[#D4AF37]">
+                <span class="material-symbols-outlined filled-icon text-lg">star</span>
+                <span class="material-symbols-outlined filled-icon text-lg">star</span>
+                <span class="material-symbols-outlined filled-icon text-lg">star</span>
+                <span class="material-symbols-outlined filled-icon text-lg">star</span>
+                <span class="material-symbols-outlined filled-icon text-lg">star</span>
+              </div>
+              <p class="text-on-surface-variant italic text-sm leading-relaxed mb-6">
+                "A Dra. Kimberly não apenas transformou meu sorriso com as lentes, mas me devolveu a confiança plena ao falar e sorrir. O atendimento é extremamente cuidadoso e delicado."
+              </p>
+            </div>
+            <div class="flex items-center gap-3 pt-4 border-t border-outline-variant/30">
+              <div class="w-10 h-10 rounded-full bg-secondary-container text-primary flex items-center justify-center font-bold text-sm">MS</div>
+              <div>
+                <h4 class="font-semibold text-sm text-on-surface">Mariana Silva</h4>
+                <span class="text-[11px] text-on-surface-variant uppercase tracking-wider">Lentes em Resina</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 2 -->
+          <div class="bg-surface-container-low p-8 rounded-2xl border border-outline-variant/30 shadow-sm relative hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between reveal reveal-delay-100">
+            <div>
+              <div class="flex items-center gap-1 mb-4 text-[#D4AF37]">
+                <span class="material-symbols-outlined filled-icon text-lg">star</span>
+                <span class="material-symbols-outlined filled-icon text-lg">star</span>
+                <span class="material-symbols-outlined filled-icon text-lg">star</span>
+                <span class="material-symbols-outlined filled-icon text-lg">star</span>
+                <span class="material-symbols-outlined filled-icon text-lg">star</span>
+              </div>
+              <p class="text-on-surface-variant italic text-sm leading-relaxed mb-6">
+                "Profissional excelente e humana! Minha harmonização ficou tão sutil e elegante que as pessoas elogiam minha pele sem saber que fiz procedimento. Era exatamente a naturalidade que eu buscava."
+              </p>
+            </div>
+            <div class="flex items-center gap-3 pt-4 border-t border-outline-variant/30">
+              <div class="w-10 h-10 rounded-full bg-secondary-container text-primary flex items-center justify-center font-bold text-sm">CR</div>
+              <div>
+                <h4 class="font-semibold text-sm text-on-surface">Camila Rodrigues</h4>
+                <span class="text-[11px] text-on-surface-variant uppercase tracking-wider">Harmonização Facial</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 3 -->
+          <div class="bg-surface-container-low p-8 rounded-2xl border border-outline-variant/30 shadow-sm relative hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between reveal reveal-delay-200">
+            <div>
+              <div class="flex items-center gap-1 mb-4 text-[#D4AF37]">
+                <span class="material-symbols-outlined filled-icon text-lg">star</span>
+                <span class="material-symbols-outlined filled-icon text-lg">star</span>
+                <span class="material-symbols-outlined filled-icon text-lg">star</span>
+                <span class="material-symbols-outlined filled-icon text-lg">star</span>
+                <span class="material-symbols-outlined filled-icon text-lg">star</span>
+              </div>
+              <p class="text-on-surface-variant italic text-sm leading-relaxed mb-6">
+                "O consultório no Batel é impecável e acolhedor. O protocolo com bioestimuladores restaurou a firmeza da minha pele de forma impressionante. Recomendo de olhos fechados!"
+              </p>
+            </div>
+            <div class="flex items-center gap-3 pt-4 border-t border-outline-variant/30">
+              <div class="w-10 h-10 rounded-full bg-secondary-container text-primary flex items-center justify-center font-bold text-sm">JM</div>
+              <div>
+                <h4 class="font-semibold text-sm text-on-surface">Juliana Mendes</h4>
+                <span class="text-[11px] text-on-surface-variant uppercase tracking-wider">Bioestimuladores</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CALL TO ACTION BANNER -->
+    <section class="py-20 bg-secondary-container/40 border-t border-outline-variant/40">
+      <div class="max-w-[1100px] mx-auto px-6 md:px-12 text-center space-y-6 reveal">
+        <span class="text-xs font-bold uppercase tracking-[0.2em] text-primary">Atendimento Personalizado</span>
+        <h2 class="font-serif text-3xl sm:text-4xl text-deep-charcoal font-semibold">
+          Pronta para dar o próximo passo na sua autoestima?
+        </h2>
+        <p class="text-on-surface-variant text-base max-w-2xl mx-auto leading-relaxed">
+          Agende sua avaliação clínica. Iremos analisar detalhadamente sua anatomia facial para criar um planejamento exclusivo e harmonioso para você.
+        </p>
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
+          <a href="contato.html" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-deep-charcoal hover:bg-primary text-clinical-white text-xs font-semibold uppercase tracking-[0.15em] px-8 py-4 rounded shadow-md transition-all duration-300">
+            <span>Solicitar Agendamento</span>
+            <span class="material-symbols-outlined text-sm">arrow_forward</span>
+          </a>
+          <a href="https://wa.me/554196541288?text=Ol%C3%A1%2C%20Dra.%20Kimberly!%20Gostaria%20de%20tirar%20uma%20d%C3%BAvida%20sobre%20os%20procedimentos." target="_blank" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-[#25D366] hover:bg-[#20BA56] text-white text-xs font-semibold uppercase tracking-[0.15em] px-8 py-4 rounded shadow-md transition-all duration-300">
+            <span>Falar pelo WhatsApp</span>
+            <span class="material-symbols-outlined text-sm">chat</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Global Footer -->
+  <footer class="bg-surface-container-low border-t border-outline-variant/50 pt-16 pb-12 text-on-surface-variant text-sm">
+    <div class="max-w-[1400px] mx-auto px-6 md:px-12 grid grid-cols-1 md:grid-cols-4 gap-10">
+      <!-- Col 1: Brand -->
+      <div class="space-y-4 md:col-span-2">
+        <div class="flex items-center gap-2">
+          <div class="w-8 h-8 rounded-full bg-secondary-container flex items-center justify-center font-serif text-primary font-bold text-sm">KV</div>
+          <span class="font-serif text-xl font-semibold text-on-surface">Dra. Kimberly Vieira</span>
+        </div>
+        <p class="text-xs text-primary uppercase tracking-widest font-semibold">Especialista em Harmonização Orofacial • CRO/PR 34185</p>
+        <p class="text-xs leading-relaxed max-w-md text-on-surface-variant">
+          Atendimento humanizado de alta precisão em Curitiba. Transformações que respeitam sua identidade e proporcionam harmonia estética e bem-estar.
+        </p>
+      </div>
+
+      <!-- Col 2: Navigation Links -->
+      <div class="space-y-3">
+        <h4 class="font-semibold text-xs text-on-surface uppercase tracking-widest">Navegação</h4>
+        <ul class="space-y-2 text-xs">
+          <li><a href="index.html" class="hover:text-primary transition-colors">Início</a></li>
+          <li><a href="procedimentos.html" class="hover:text-primary transition-colors">Procedimentos & Tratamentos</a></li>
+          <li><a href="sobre.html" class="hover:text-primary transition-colors">Sobre a Dra. Kimberly</a></li>
+          <li><a href="contato.html" class="hover:text-primary transition-colors">Contato & Agendamento</a></li>
+        </ul>
+      </div>
+
+      <!-- Col 3: Contact & Address -->
+      <div class="space-y-3">
+        <h4 class="font-semibold text-xs text-on-surface uppercase tracking-widest">Consultório</h4>
+        <p class="text-xs leading-relaxed">
+          Av. do Batel, 1230 - Sala 405<br>
+          Batel, Curitiba - PR, 80420-090
+        </p>
+        <p class="text-xs font-semibold text-primary pt-1">
+          WhatsApp: <a href="https://wa.me/554196541288" class="underline hover:text-primary-dark">(41) 9654-1288</a>
+        </p>
+        <p class="text-[11px] text-on-surface-variant">Seg a Sex: 09h às 18h | Sáb: com agendamento</p>
+      </div>
+    </div>
+
+    <div class="max-w-[1400px] mx-auto px-6 md:px-12 mt-12 pt-6 border-t border-outline-variant/40 flex flex-col sm:flex-row items-center justify-between text-xs gap-4">
+      <p>© 2026 Dra. Kimberly Vieira - CRO/PR 34185. Todos os direitos reservados.</p>
+      <p class="text-[11px] text-on-surface-variant">Harmonização Facial & Odontologia Estética em Curitiba</p>
+    </div>
+  </footer>
+
+  <!-- Lightbox Modal -->
+  <div id="lightbox-modal" class="lightbox-modal" role="dialog" aria-modal="true">
+    <button type="button" data-close-lightbox class="absolute top-6 right-6 text-white text-3xl p-2 hover:opacity-80 focus:outline-none" aria-label="Fechar">
+      <span class="material-symbols-outlined text-4xl">close</span>
+    </button>
+    <div class="flex flex-col items-center max-w-4xl mx-auto">
+      <img id="lightbox-image" src="" alt="" class="max-h-[80vh] w-auto rounded-lg">
+      <p id="lightbox-caption" class="text-white/90 text-sm mt-3 text-center"></p>
+    </div>
+  </div>
+
+  <!-- Floating WhatsApp Button -->
+  <a href="https://wa.me/554196541288?text=Ol%C3%A1%2C%20Dra.%20Kimberly!%20Gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o." target="_blank" class="floating-whatsapp" aria-label="Falar no WhatsApp">
+    <div class="whatsapp-pulse"></div>
+    <span class="material-symbols-outlined text-2xl">chat</span>
+    <span class="hidden sm:inline">Agendar no WhatsApp</span>
+  </a>
+
+  <!-- Main JS -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

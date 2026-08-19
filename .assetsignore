@@ -1,0 +1,6 @@
+# .assetsignore
+*.zip
+*.tar.gz
+stitch_website_status_tracker/
+wp-content/
+.git/

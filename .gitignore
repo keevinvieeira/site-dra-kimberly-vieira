@@ -1,0 +1,14 @@
+# Arquivos de backup pesados e temporários
+*.zip
+*.tar.gz
+stitch_website_status_tracker/
+wp-content/
+
+# Logs e dependências
+node_modules/
+dist/
+build/
+.cache/
+.DS_Store
+Thumbs.db
+*.log

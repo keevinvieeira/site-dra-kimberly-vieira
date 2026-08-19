@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Procedimentos | Dra. Kimberly Vieira - Harmonização Facial & Odontologia</title>
+  <meta name="description" content="Conheça todos os procedimentos: Botox, Preenchimento com Ácido Hialurônico, Bioestimuladores de Colágeno, Lentes em Resina e Clareamento Dental em Curitiba com a Dra. Kimberly Vieira (CRO/PR 34185).">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
+  
+  <!-- Material Symbols -->
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#785346",
+            "primary-dark": "#5a3c31",
+            "primary-container": "#936b5d",
+            "on-primary": "#ffffff",
+            "secondary": "#695b58",
+            "secondary-container": "#f2ded9",
+            "on-secondary-container": "#6f615d",
+            "tertiary": "#5c5c5c",
+            "tertiary-container": "#757474",
+            "dusty-rose": "#D4B1A7",
+            "soft-clay": "#C4A499",
+            "surface": "#fbf9f8",
+            "surface-dim": "#dbdad9",
+            "surface-container-low": "#f5f3f2",
+            "surface-container": "#efedec",
+            "surface-container-high": "#e9e8e7",
+            "surface-container-highest": "#e4e2e1",
+            "on-surface": "#1b1c1b",
+            "on-surface-variant": "#504440",
+            "deep-charcoal": "#1A1A1A",
+            "clinical-white": "#FFFFFF",
+            "outline": "#83746f",
+            "outline-variant": "#d5c3bd"
+          },
+          fontFamily: {
+            "serif": ["Playfair Display", "Georgia", "serif"],
+            "sans": ["Manrope", "system-ui", "sans-serif"],
+            "display": ["Playfair Display", "Georgia", "serif"],
+            "body": ["Manrope", "sans-serif"]
+          },
+          spacing: {
+            "margin-desktop": "5rem",
+            "margin-mobile": "1.5rem",
+            "section-gap": "6rem",
+            "gutter": "2rem"
+          }
+        }
+      }
+    }
+  </script>
+  
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="bg-surface text-on-surface font-sans antialiased overflow-x-hidden selection:bg-primary-container selection:text-white">
+
+  <!-- Top Navigation Bar -->
+  <header class="fixed top-0 left-0 w-full z-50 bg-surface/90 backdrop-blur-md border-b border-outline-variant/40 transition-all duration-300">
+    <div class="max-w-[1400px] mx-auto px-6 md:px-12 py-4 flex items-center justify-between">
+      <!-- Brand / Logo -->
+      <a href="index.html" class="flex items-center gap-3 group">
+        <div class="w-10 h-10 rounded-full bg-secondary-container/80 flex items-center justify-center border border-primary/20 group-hover:scale-105 transition-transform">
+          <span class="font-serif text-primary font-bold text-lg">KV</span>
+        </div>
+        <div class="flex flex-col">
+          <span class="font-serif text-lg md:text-xl tracking-wider text-on-surface font-semibold">Dra. Kimberly Vieira</span>
+          <span class="text-[10px] uppercase tracking-[0.2em] text-primary -mt-1 font-medium">Harmonização & Odontologia</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-on-surface-variant">
+        <a href="index.html" class="hover:text-primary transition-colors py-1">Início</a>
+        <a href="procedimentos.html" class="text-primary font-semibold border-b-2 border-primary pb-1 transition-colors">Procedimentos</a>
+        <a href="sobre.html" class="hover:text-primary transition-colors py-1">Sobre Mim</a>
+        <a href="contato.html" class="hover:text-primary transition-colors py-1">Contato & Agendamento</a>
+      </nav>
+
+      <!-- CTA Button -->
+      <div class="hidden lg:flex items-center gap-4">
+        <a href="contato.html" class="inline-flex items-center gap-2 bg-deep-charcoal hover:bg-primary text-clinical-white text-xs font-semibold uppercase tracking-[0.15em] px-6 py-3 rounded transition-all duration-300 shadow-sm hover:shadow-md">
+          <span>Agendar Consulta</span>
+          <span class="material-symbols-outlined text-base">calendar_month</span>
+        </a>
+      </div>
+
+      <!-- Mobile Hamburger Button -->
+      <button type="button" data-toggle-menu class="md:hidden text-on-surface p-2 rounded-lg hover:bg-secondary-container/50 transition-colors focus:outline-none" aria-label="Abrir Menu">
+        <span class="material-symbols-outlined text-3xl">menu</span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Menu Drawer & Backdrop -->
+  <div id="mobile-menu-backdrop" class="fixed inset-0 bg-deep-charcoal/60 backdrop-blur-sm z-50 opacity-0 pointer-events-none transition-opacity duration-300"></div>
+  <aside id="mobile-menu" class="fixed top-0 right-0 h-full w-[80%] max-w-sm bg-surface z-50 transform translate-x-full transition-transform duration-300 ease-in-out flex flex-col justify-between p-8 border-l border-outline-variant/40 shadow-2xl">
+    <div>
+      <div class="flex items-center justify-between pb-6 border-b border-outline-variant/40">
+        <div class="flex items-center gap-2">
+          <div class="w-8 h-8 rounded-full bg-secondary-container flex items-center justify-center font-serif text-primary font-bold text-sm">KV</div>
+          <span class="font-serif font-semibold text-base text-on-surface">Dra. Kimberly Vieira</span>
+        </div>
+        <button type="button" data-close-menu class="p-2 text-on-surface hover:bg-secondary-container rounded-full" aria-label="Fechar Menu">
+          <span class="material-symbols-outlined">close</span>
+        </button>
+      </div>
+
+      <nav class="flex flex-col gap-4 mt-8 text-base font-medium">
+        <a href="index.html" class="text-on-surface-variant hover:text-primary py-2 px-3 rounded-lg hover:bg-secondary-container/30 transition-colors">Início</a>
+        <a href="procedimentos.html" class="text-primary font-semibold py-2 px-3 rounded-lg bg-secondary-container/40">Procedimentos</a>
+        <a href="sobre.html" class="text-on-surface-variant hover:text-primary py-2 px-3 rounded-lg hover:bg-secondary-container/30 transition-colors">Sobre Mim</a>
+        <a href="contato.html" class="text-on-surface-variant hover:text-primary py-2 px-3 rounded-lg hover:bg-secondary-container/30 transition-colors">Contato & Localização</a>
+      </nav>
+    </div>
+
+    <div class="space-y-4 pt-6 border-t border-outline-variant/40">
+      <a href="https://wa.me/554196541288?text=Ol%C3%A1%2C%20Dra.%20Kimberly!%20Gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o." target="_blank" class="w-full inline-flex items-center justify-center gap-2 bg-[#25D366] text-white text-sm font-semibold uppercase tracking-wider py-3.5 rounded shadow-sm">
+        <span class="material-symbols-outlined text-lg">chat</span>
+        <span>WhatsApp (41) 9654-1288</span>
+      </a>
+      <p class="text-center text-xs text-on-surface-variant">CRO/PR 34185 | Batel, Curitiba</p>
+    </div>
+  </aside>
+
+  <main class="pt-24 md:pt-28">
+    <!-- PROCEDURES HERO HEADER -->
+    <section class="py-16 md:py-20 max-w-[1300px] mx-auto px-6 md:px-12 text-center reveal active">
+      <span class="text-xs font-bold uppercase tracking-[0.2em] text-primary">Catálogo Exclusivo de Tratamentos</span>
+      <h1 class="font-serif text-3xl sm:text-5xl font-semibold text-deep-charcoal mt-3 mb-4">
+        Harmonização Orofacial & Odontologia Estética
+      </h1>
+      <div class="w-16 h-0.5 bg-primary/40 mx-auto mb-6"></div>
+      <p class="text-on-surface-variant text-base sm:text-lg max-w-3xl mx-auto leading-relaxed">
+        Cada procedimento é indicado a partir de um diagnóstico facial criterioso, unindo tecnologia de ponta, produtos padrão ouro e respeito à anatomia individual.
+      </p>
+    </section>
+
+    <!-- DETAILED PROCEDURES LIST & FACIAL MAP -->
+    <section class="pb-24 max-w-[1300px] mx-auto px-6 md:px-12">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+        
+        <!-- Left Column: Facial Map Reference Card -->
+        <div class="lg:col-span-5 lg:sticky lg:top-28 space-y-6 reveal">
+          <div class="rounded-2xl overflow-hidden shadow-md border border-outline-variant/40 bg-surface relative group">
+            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBQxXnk5F2X16Ghmx2QxEjEytL05x7bue7t-aCMmpwps_Gw-_NeypvIAGmB3N-z0Y8Mpwu1pRaVbgIszTzKb-nNUqgdbIMMyBCPxc09mH8ym-PUtMFCoijA1ggvMl-OTf0Kh-p2KSk2aD5InPrwl2gS3IJxq323Fzy9uzdCz7ESONoAWgvttfH_0KkUeQr4_IXzK_s3fV41FavkHZULPiz6bY-xUFKcf8Dp3dw5fWge3yq4_WGPwMBNB6zN9o2UnUZ1Cw" 
+                 alt="Mapeamento e Planejamento Facial - Dra. Kimberly Vieira" 
+                 class="w-full h-auto object-cover group-hover:scale-102 transition-transform duration-500">
+            <div class="p-6 border-t border-outline-variant/30 space-y-2">
+              <span class="text-xs uppercase tracking-wider font-semibold text-primary">Diagnóstico Personalizado</span>
+              <h3 class="font-serif text-lg font-semibold text-on-surface">Planejamento Anatômico 3D</h3>
+              <p class="text-xs text-on-surface-variant leading-relaxed">
+                Avaliamos vetores de sustentação, proporção áurea, dinâmica do sorriso e qualidade da pele para atingir resultados harmônicos e naturais.
+              </p>
+            </div>
+          </div>
+
+          <div class="bg-secondary-container/40 p-6 rounded-2xl border border-primary/20 space-y-3">
+            <h4 class="font-serif text-base font-semibold text-primary">Dúvidas sobre o procedimento ideal?</h4>
+            <p class="text-xs text-on-surface-variant leading-relaxed">
+              Durante a consulta presencial, realizamos a avaliação completa e indicamos exatamente o protocolo adequado para a sua queixa.
+            </p>
+            <a href="contato.html" class="inline-flex items-center gap-1.5 text-xs font-semibold uppercase tracking-wider text-deep-charcoal hover:text-primary pt-1">
+              <span>Agendar avaliação presencial</span>
+              <span class="material-symbols-outlined text-sm">arrow_forward</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Right Column: Procedures Accordions & Descriptions -->
+        <div class="lg:col-span-7 space-y-8 reveal reveal-delay-100" data-accordion-group>
+          
+          <!-- Category 1: Harmonização Orofacial -->
+          <div class="space-y-4">
+            <div class="flex items-center gap-3 border-b border-primary/20 pb-3">
+              <span class="w-8 h-8 rounded-full bg-secondary-container text-primary flex items-center justify-center font-bold text-sm">01</span>
+              <h2 class="font-serif text-2xl font-semibold text-primary">Harmonização Orofacial (HOF)</h2>
+            </div>
+
+            <!-- Item 1: Toxina Botulínica -->
+            <div class="border border-outline-variant/40 rounded-xl p-5 bg-surface hover:bg-surface-container-low/60 transition-colors" data-accordion>
+              <div class="flex items-center justify-between cursor-pointer" data-accordion-header>
+                <div>
+                  <h3 class="font-serif text-lg font-semibold text-on-surface">Toxina Botulínica (Botox)</h3>
+                  <span class="text-xs text-primary font-medium">Preventivo & Terapêutico</span>
+                </div>
+                <span class="material-symbols-outlined text-primary text-2xl transition-transform duration-300" data-accordion-icon>expand_more</span>
+              </div>
+              <div class="pt-4 text-sm text-on-surface-variant space-y-2 hidden" data-accordion-content>
+                <p>
+                  Suaviza rugas dinâmicas da testa (frontal), glabela (entre as sobrancelhas) e pés de galinha (orbicular dos olhos). Previne que linhas de expressão se tornem vincos profundos.
+                </p>
+                <p>
+                  <strong>Indicações terapêuticas:</strong> Tratamento de bruxismo e apertamento dental, alívio de dores na ATM e correção do sorriso gengival.
+                </p>
+                <div class="flex flex-wrap gap-2 pt-2">
+                  <span class="bg-secondary-container text-primary text-[11px] font-semibold px-2.5 py-1 rounded">Rugas Dinâmicas</span>
+                  <span class="bg-secondary-container text-primary text-[11px] font-semibold px-2.5 py-1 rounded">Bruxismo / ATM</span>
+                  <span class="bg-secondary-container text-primary text-[11px] font-semibold px-2.5 py-1 rounded">Sorriso Gengival</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Item 2: Ácido Hialurônico -->
+            <div class="border border-outline-variant/40 rounded-xl p-5 bg-surface hover:bg-surface-container-low/60 transition-colors" data-accordion>
+              <div class="flex items-center justify-between cursor-pointer" data-accordion-header>
+                <div>
+                  <h3 class="font-serif text-lg font-semibold text-on-surface">Preenchimento com Ácido Hialurônico</h3>
+                  <span class="text-xs text-primary font-medium">Volume, Contorno & Sustentação</span>
+                </div>
+                <span class="material-symbols-outlined text-primary text-2xl transition-transform duration-300" data-accordion-icon>expand_more</span>
+              </div>
+              <div class="pt-4 text-sm text-on-surface-variant space-y-2 hidden" data-accordion-content>
+                <p>
+                  Substância biocompatível e reabsorvível utilizada para restaurar volumes perdidos com o envelhecimento, definir contornos e hidratar profundamente as camadas da pele.
+                </p>
+                <p>
+                  <strong>Áreas tratadas:</strong> Preenchimento Labial (definição de arco do cupido e volume sutil), Malar (efeito blush/sustentação), Mento (projeção do queixo), Mandíbula, Sulco Nasogeniano (bigode chinês) e Rinomodelação não cirúrgica.
+                </p>
+                <div class="flex flex-wrap gap-2 pt-2">
+                  <span class="bg-secondary-container text-primary text-[11px] font-semibold px-2.5 py-1 rounded">Labial</span>
+                  <span class="bg-secondary-container text-primary text-[11px] font-semibold px-2.5 py-1 rounded">Malar & Mento</span>
+                  <span class="bg-secondary-container text-primary text-[11px] font-semibold px-2.5 py-1 rounded">Rinomodelação</span>
+                  <span class="bg-secondary-container text-primary text-[11px] font-semibold px-2.5 py-1 rounded">Olheiras</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Item 3: Bioestimuladores de Colágeno -->
+            <div class="border border-outline-variant/40 rounded-xl p-5 bg-surface hover:bg-surface-container-low/60 transition-colors" data-accordion>
+              <div class="flex items-center justify-between cursor-pointer" data-accordion-header>
+                <div>
+                  <h3 class="font-serif text-lg font-semibold text-on-surface">Bioestimuladores de Colágeno</h3>
+                  <span class="text-xs text-primary font-medium">Firmeza & Combate à Flacidez</span>
+                </div>
+                <span class="material-symbols-outlined text-primary text-2xl transition-transform duration-300" data-accordion-icon>expand_more</span>
+              </div>
+              <div class="pt-4 text-sm text-on-surface-variant space-y-2 hidden" data-accordion-content>
+                <p>
+                  Produtos como Radiesse (hidroxiapatita de cálcio), Sculptra e Elleva (ácido poli-L-lático) que induzem os fibroblastos a produzirem novo colágeno natural nos meses seguintes à aplicação.
+                </p>
+                <p>
+                  Melhora substancialmente a espessura, elasticidade e firmeza da pele da face, pescoço e colo sem conferir volume artificial.
+                </p>
+                <div class="flex flex-wrap gap-2 pt-2">
+                  <span class="bg-secondary-container text-primary text-[11px] font-semibold px-2.5 py-1 rounded">Radiesse</span>
+                  <span class="bg-secondary-container text-primary text-[11px] font-semibold px-2.5 py-1 rounded">Sculptra / Elleva</span>
+                  <span class="bg-secondary-container text-primary text-[11px] font-semibold px-2.5 py-1 rounded">Face e Pescoço</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Item 4: Fios de PDO & Skinbooster -->
+            <div class="border border-outline-variant/40 rounded-xl p-5 bg-surface hover:bg-surface-container-low/60 transition-colors" data-accordion>
+              <div class="flex items-center justify-between cursor-pointer" data-accordion-header>
+                <div>
+                  <h3 class="font-serif text-lg font-semibold text-on-surface">Fios de PDO & Skinbooster</h3>
+                  <span class="text-xs text-primary font-medium">Estímulo Dérmico & Hidratação</span>
+                </div>
+                <span class="material-symbols-outlined text-primary text-2xl transition-transform duration-300" data-accordion-icon>expand_more</span>
+              </div>
+              <div class="pt-4 text-sm text-on-surface-variant space-y-2 hidden" data-accordion-content>
+                <p>
+                  <strong>Fios de PDO:</strong> Fios 100% absorvíveis que sustentam tecidos e induzem colágeno em linhas finas (ao redor dos olhos, código de barras) e contorno mandibular.
+                </p>
+                <p>
+                  <strong>Skinbooster:</strong> Injeção dérmica de ácido hialurônico fluido que hidrata de dentro para fora, conferindo viço imediato e textura radiante à pele.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 2: Odontologia Estética -->
+          <div class="space-y-4 pt-6">
+            <div class="flex items-center gap-3 border-b border-primary/20 pb-3">
+              <span class="w-8 h-8 rounded-full bg-secondary-container text-primary flex items-center justify-center font-bold text-sm">02</span>
+              <h2 class="font-serif text-2xl font-semibold text-primary">Odontologia Estética</h2>
+            </div>
+
+            <!-- Item 5: Lentes de Contato Dental & Facetas -->
+            <div class="border border-outline-variant/40 rounded-xl p-5 bg-surface hover:bg-surface-container-low/60 transition-colors" data-accordion>
+              <div class="flex items-center justify-between cursor-pointer" data-accordion-header>
+                <div>
+                  <h3 class="font-serif text-lg font-semibold text-on-surface">Lentes em Resina & Porcelana</h3>
+                  <span class="text-xs text-primary font-medium">Renovação Completa do Sorriso</span>
+                </div>
+                <span class="material-symbols-outlined text-primary text-2xl transition-transform duration-300" data-accordion-icon>expand_more</span>
+              </div>
+              <div class="pt-4 text-sm text-on-surface-variant space-y-2 hidden" data-accordion-content>
+                <p>
+                  Facetas ultrafinas confeccionadas com resinas compostas de altíssima nanotecnologia ou porcelana. Corrigem manchas resistentes, dentes desgastados, diastemas (espaços entre dentes) e assimetrias de formato.
+                </p>
+                <p>
+                  Técnica minimamente invasiva, altamente conservadora e planejada em harmonia com os lábios e proporções faciais.
+                </p>
+                <div class="flex flex-wrap gap-2 pt-2">
+                  <span class="bg-secondary-container text-primary text-[11px] font-semibold px-2.5 py-1 rounded">Facetas em Resina</span>
+                  <span class="bg-secondary-container text-primary text-[11px] font-semibold px-2.5 py-1 rounded">Fechamento de Diastemas</span>
+                  <span class="bg-secondary-container text-primary text-[11px] font-semibold px-2.5 py-1 rounded">Cor & Proporção</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Item 6: Clareamento Dental -->
+            <div class="border border-outline-variant/40 rounded-xl p-5 bg-surface hover:bg-surface-container-low/60 transition-colors" data-accordion>
+              <div class="flex items-center justify-between cursor-pointer" data-accordion-header>
+                <div>
+                  <h3 class="font-serif text-lg font-semibold text-on-surface">Clareamento Dental Profissional</h3>
+                  <span class="text-xs text-primary font-medium">Luminosidade & Sorriso Radiante</span>
+                </div>
+                <span class="material-symbols-outlined text-primary text-2xl transition-transform duration-300" data-accordion-icon>expand_more</span>
+              </div>
+              <div class="pt-4 text-sm text-on-surface-variant space-y-2 hidden" data-accordion-content>
+                <p>
+                  Tratamento seguro e sem agressão ao esmalte dental. Disponível nas modalidades de <strong>Consultório</strong> (resultado rápido com gel clareador de alta concentração e proteção gengival) e <strong>Caseiro Supervisionado</strong> (com moldeiras personalizadas e géis dessensibilizantes).
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CASOS CLÍNICOS GALLERY SECTION -->
+    <section class="py-20 bg-surface-container-low border-y border-outline-variant/30">
+      <div class="max-w-[1300px] mx-auto px-6 md:px-12">
+        <div class="text-center max-w-2xl mx-auto mb-16 space-y-3 reveal">
+          <span class="text-xs font-bold uppercase tracking-[0.2em] text-primary">Galeria de Casos</span>
+          <h2 class="font-serif text-3xl sm:text-4xl font-semibold text-deep-charcoal">Casos Clínicos Reais</h2>
+          <div class="w-16 h-0.5 bg-primary/40 mx-auto"></div>
+          <p class="text-on-surface-variant text-sm sm:text-base">Resultados obtidos com técnicas precisas e planejamento exclusivo.</p>
+        </div>
+
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 sm:gap-6">
+          <!-- Item 1: Rinomodelação 1 -->
+          <div class="aspect-square rounded-xl overflow-hidden shadow-sm border border-outline-variant/40 relative group cursor-pointer reveal" 
+               data-lightbox 
+               data-lightbox-src="https://lh3.googleusercontent.com/aida-public/AB6AXuA1mRMlype0rylOLEtO2rdTcF4UkwsdVFYFKvLKcH3uSjqS1ypYhuWxTEkt_hgEwnqQqRFlpjedJczRaEDpISTQhduJfwII4-uoaW5QJnAs0bhpJ88dHGrn3FAUiM-5rbX0c4gNNnIatFax_J0N1QUTePAVmVt949Q_osto2FGljDIepIBEIDK-T8Hugdf-nFLbSyUvkAZcQMPR2wnM8dofumuLWzat2hxtvahcYK8LRmf-zfavzn6q4vzQdEupSvqzWA"
+               data-lightbox-alt="Rinomodelação não cirúrgica com Ácido Hialurônico">
+            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuA1mRMlype0rylOLEtO2rdTcF4UkwsdVFYFKvLKcH3uSjqS1ypYhuWxTEkt_hgEwnqQqRFlpjedJczRaEDpISTQhduJfwII4-uoaW5QJnAs0bhpJ88dHGrn3FAUiM-5rbX0c4gNNnIatFax_J0N1QUTePAVmVt949Q_osto2FGljDIepIBEIDK-T8Hugdf-nFLbSyUvkAZcQMPR2wnM8dofumuLWzat2hxtvahcYK8LRmf-zfavzn6q4vzQdEupSvqzWA" 
+                 alt="Rinomodelação" 
+                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+            <div class="absolute inset-0 bg-deep-charcoal/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+              <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
+            </div>
+            <div class="absolute bottom-2 left-2 bg-surface/90 backdrop-blur-sm px-2 py-0.5 rounded text-[10px] font-semibold text-primary uppercase">
+              Rinomodelação
+            </div>
+          </div>
+
+          <!-- Item 2: Rinomodelação Perfil -->
+          <div class="aspect-square rounded-xl overflow-hidden shadow-sm border border-outline-variant/40 relative group cursor-pointer reveal reveal-delay-100" 
+               data-lightbox 
+               data-lightbox-src="https://lh3.googleusercontent.com/aida-public/AB6AXuDPFP69wiiEi1AIAA54YJ1bqjMNbvYfYHShsO-q5IC7ntLt2AxRiZl3nGT5IddWTuOkjPNtD02WK2mxkrrdzwUvI4d8GwwsRm5fNFEbuGDD1RYtQZYma67el0v044BJuxwHVt_A3bca8L-LP9Z_m5hwF_-wAyDKt590XR-WlgZM4r4XXQU-cDamGRwtQLEeu8HCeyBN0sXwucppy12p_Ebkp0WC4pGnuOKbLisI8EgSD7F6zZysuzNgVn5-cIlHEAFoAg"
+               data-lightbox-alt="Rinomodelação Perfil - Harmonização de Dorso e Ponta">
+            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDPFP69wiiEi1AIAA54YJ1bqjMNbvYfYHShsO-q5IC7ntLt2AxRiZl3nGT5IddWTuOkjPNtD02WK2mxkrrdzwUvI4d8GwwsRm5fNFEbuGDD1RYtQZYma67el0v044BJuxwHVt_A3bca8L-LP9Z_m5hwF_-wAyDKt590XR-WlgZM4r4XXQU-cDamGRwtQLEeu8HCeyBN0sXwucppy12p_Ebkp0WC4pGnuOKbLisI8EgSD7F6zZysuzNgVn5-cIlHEAFoAg" 
+                 alt="Rinomodelação Perfil" 
+                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+            <div class="absolute inset-0 bg-deep-charcoal/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+              <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
+            </div>
+            <div class="absolute bottom-2 left-2 bg-surface/90 backdrop-blur-sm px-2 py-0.5 rounded text-[10px] font-semibold text-primary uppercase">
+              Perfil Facial
+            </div>
+          </div>
+
+          <!-- Item 3: Harmonização Facial -->
+          <div class="aspect-square rounded-xl overflow-hidden shadow-sm border border-outline-variant/40 relative group cursor-pointer reveal reveal-delay-200" 
+               data-lightbox 
+               data-lightbox-src="https://lh3.googleusercontent.com/aida-public/AB6AXuDj9h6E3nG7ODGin-jxRI4GqedbTeZb6z5eXI9q-IjH39RR7YPg_XsTvGJsm2gtlhIhMo84DumfwY99T8UR3sMGtGSqdDwl5aKMpiA8ViTscHRzWegF-k3Ljmd1EjqW1nE6ub1yA1GCq3k7VmbP1-rUfaQ4JOFWUbFeIxo4PlmMAow6y038hmUo1slODv3_XFfUgK0xffoYXoqTMQvRbuusTtbtr5J_URsRxOPemO0zFTjrQ979Jic4kiYkgYRDVHe5EA"
+               data-lightbox-alt="Harmonização Orofacial e Rejuvenescimento">
+            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDj9h6E3nG7ODGin-jxRI4GqedbTeZb6z5eXI9q-IjH39RR7YPg_XsTvGJsm2gtlhIhMo84DumfwY99T8UR3sMGtGSqdDwl5aKMpiA8ViTscHRzWegF-k3Ljmd1EjqW1nE6ub1yA1GCq3k7VmbP1-rUfaQ4JOFWUbFeIxo4PlmMAow6y038hmUo1slODv3_XFfUgK0xffoYXoqTMQvRbuusTtbtr5J_URsRxOPemO0zFTjrQ979Jic4kiYkgYRDVHe5EA" 
+                 alt="Harmonização Facial" 
+                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+            <div class="absolute inset-0 bg-deep-charcoal/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+              <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
+            </div>
+            <div class="absolute bottom-2 left-2 bg-surface/90 backdrop-blur-sm px-2 py-0.5 rounded text-[10px] font-semibold text-primary uppercase">
+              HOF Completa
+            </div>
+          </div>
+
+          <!-- Item 4: Preenchimento Labial -->
+          <div class="aspect-square rounded-xl overflow-hidden shadow-sm border border-outline-variant/40 relative group cursor-pointer reveal reveal-delay-300" 
+               data-lightbox 
+               data-lightbox-src="https://lh3.googleusercontent.com/aida-public/AB6AXuCStxyIuyOS3iVC8omV_oCBfXyhz2B7WroBLv1u_-j7yK6HXLBqLAaaxNZr3cmnlbaR50m_T0jg02aQvThawVWJg4feieg2cO3tQQebQgNqwrdA6iaV6ZLjkDEdHSDrfDFI2ZrLEM8PQaVC75QeyIgioUCkYWofyAt5Joi0KO5_Te0QWrjYMQ45anH9_RKMaqd1amzdIcpCKfxR7yPU4zNJec-QzbGrEAXw-I8limzHBEe82oDA8YTsrZ437gqjH5h5MA"
+               data-lightbox-alt="Preenchimento Labial - Contorno e Hidratação">
+            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCStxyIuyOS3iVC8omV_oCBfXyhz2B7WroBLv1u_-j7yK6HXLBqLAaaxNZr3cmnlbaR50m_T0jg02aQvThawVWJg4feieg2cO3tQQebQgNqwrdA6iaV6ZLjkDEdHSDrfDFI2ZrLEM8PQaVC75QeyIgioUCkYWofyAt5Joi0KO5_Te0QWrjYMQ45anH9_RKMaqd1amzdIcpCKfxR7yPU4zNJec-QzbGrEAXw-I8limzHBEe82oDA8YTsrZ437gqjH5h5MA" 
+                 alt="Preenchimento Labial" 
+                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+            <div class="absolute inset-0 bg-deep-charcoal/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+              <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
+            </div>
+            <div class="absolute bottom-2 left-2 bg-surface/90 backdrop-blur-sm px-2 py-0.5 rounded text-[10px] font-semibold text-primary uppercase">
+              Lábios Sutis
+            </div>
+          </div>
+
+          <!-- Item 5: Mapeamento de Procedimentos -->
+          <div class="aspect-square rounded-xl overflow-hidden shadow-sm border border-outline-variant/40 relative group cursor-pointer reveal reveal-delay-400" 
+               data-lightbox 
+               data-lightbox-src="https://lh3.googleusercontent.com/aida-public/AB6AXuDbg4mBejN0HWspO2-65ub8IgwENb0yFq-MfZZ2oPW5dZepiQLGZmiIKbzbo9pWorHJn2YZ7aoaaVF7emx12Bd2QxYpgmlkhQiKt2P_1lgstctMcH-ltjLPc6TJf0KA-EK7TD1Ne-xMoO0864iaSbvMMeMvtWRmfZtznwFOSnq3xvC95imO-85GDnMwhv3qJ4lTygAFLqZbMjZeqBs6ZGUk2Xa8rmhf-W4Un8yhExHjb83_aDcdE7oxPevAEzwL8dPjQA"
+               data-lightbox-alt="Mapeamento e Resultados Clínicos">
+            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDbg4mBejN0HWspO2-65ub8IgwENb0yFq-MfZZ2oPW5dZepiQLGZmiIKbzbo9pWorHJn2YZ7aoaaVF7emx12Bd2QxYpgmlkhQiKt2P_1lgstctMcH-ltjLPc6TJf0KA-EK7TD1Ne-xMoO0864iaSbvMMeMvtWRmfZtznwFOSnq3xvC95imO-85GDnMwhv3qJ4lTygAFLqZbMjZeqBs6ZGUk2Xa8rmhf-W4Un8yhExHjb83_aDcdE7oxPevAEzwL8dPjQA" 
+                 alt="Mapeamento e Resultados" 
+                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+            <div class="absolute inset-0 bg-deep-charcoal/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+              <span class="material-symbols-outlined text-white text-3xl">zoom_in</span>
+            </div>
+            <div class="absolute bottom-2 left-2 bg-surface/90 backdrop-blur-sm px-2 py-0.5 rounded text-[10px] font-semibold text-primary uppercase">
+              Mapeamento
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ SECTION -->
+    <section class="py-20 md:py-28 max-w-[1000px] mx-auto px-6 md:px-12">
+      <div class="text-center mb-16 space-y-3 reveal">
+        <span class="text-xs font-bold uppercase tracking-[0.2em] text-primary">Tire suas dúvidas</span>
+        <h2 class="font-serif text-3xl sm:text-4xl font-semibold text-deep-charcoal">Perguntas Frequentes (FAQ)</h2>
+        <div class="w-16 h-0.5 bg-primary/40 mx-auto"></div>
+      </div>
+
+      <div class="space-y-4 reveal" data-accordion-group>
+        <div class="border border-outline-variant/40 rounded-xl p-5 bg-surface" data-accordion>
+          <div class="flex items-center justify-between cursor-pointer" data-accordion-header>
+            <h3 class="font-serif text-base sm:text-lg font-semibold text-on-surface">Os procedimentos de harmonização doem?</h3>
+            <span class="material-symbols-outlined text-primary" data-accordion-icon>expand_more</span>
+          </div>
+          <div class="pt-3 text-sm text-on-surface-variant leading-relaxed hidden" data-accordion-content>
+            Utilizamos anestésicos tópicos potentes e, quando necessário, anestesia infiltrativa local idêntica à odontológica, garantindo um procedimento extremamente confortável e praticamente indolor.
+          </div>
+        </div>
+
+        <div class="border border-outline-variant/40 rounded-xl p-5 bg-surface" data-accordion>
+          <div class="flex items-center justify-between cursor-pointer" data-accordion-header>
+            <h3 class="font-serif text-base sm:text-lg font-semibold text-on-surface">Quanto tempo dura o efeito do Botox e do Preenchimento?</h3>
+            <span class="material-symbols-outlined text-primary" data-accordion-icon>expand_more</span>
+          </div>
+          <div class="pt-3 text-sm text-on-surface-variant leading-relaxed hidden" data-accordion-content>
+            A toxina botulínica possui durabilidade média de 4 a 6 meses, variando conforme o metabolismo e hábitos de atividade física. Já os preenchedores com ácido hialurônico duram entre 12 e 18 meses, sendo absorvidos naturalmente pelo organismo.
+          </div>
+        </div>
+
+        <div class="border border-outline-variant/40 rounded-xl p-5 bg-surface" data-accordion>
+          <div class="flex items-center justify-between cursor-pointer" data-accordion-header>
+            <h3 class="font-serif text-base sm:text-lg font-semibold text-on-surface">As lentes em resina desgastam os dentes naturais?</h3>
+            <span class="material-symbols-outlined text-primary" data-accordion-icon>expand_more</span>
+          </div>
+          <div class="pt-3 text-sm text-on-surface-variant leading-relaxed hidden" data-accordion-content>
+            Trata-se de uma técnica minimamente invasiva ou até sem desgaste (aditiva), preservando ao máximo a estrutura biológica original do seu dente e garantindo alta durabilidade e brilho.
+          </div>
+        </div>
+
+        <div class="border border-outline-variant/40 rounded-xl p-5 bg-surface" data-accordion>
+          <div class="flex items-center justify-between cursor-pointer" data-accordion-header>
+            <h3 class="font-serif text-base sm:text-lg font-semibold text-on-surface">Posso retornar às minhas atividades logo após a aplicação?</h3>
+            <span class="material-symbols-outlined text-primary" data-accordion-icon>expand_more</span>
+          </div>
+          <div class="pt-3 text-sm text-on-surface-variant leading-relaxed hidden" data-accordion-content>
+            Sim! A grande maioria dos procedimentos permite retorno imediato à rotina de trabalho. Apenas recomendamos evitar atividades físicas intensas e exposição solar direta nas primeiras 24 a 48 horas.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA BANNER -->
+    <section class="py-20 bg-secondary-container/40 border-t border-outline-variant/40">
+      <div class="max-w-[1100px] mx-auto px-6 md:px-12 text-center space-y-6 reveal">
+        <h2 class="font-serif text-3xl sm:text-4xl text-deep-charcoal font-semibold">
+          Pronta para revelar a harmonia do seu rosto?
+        </h2>
+        <p class="text-on-surface-variant text-base max-w-2xl mx-auto leading-relaxed">
+          Venha conversar conosco em nosso consultório no Batel, Curitiba, ou entre em contato direto pelo WhatsApp.
+        </p>
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-4 pt-2">
+          <a href="contato.html" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-deep-charcoal hover:bg-primary text-clinical-white text-xs font-semibold uppercase tracking-[0.15em] px-8 py-4 rounded shadow-md transition-all duration-300">
+            <span>Solicitar Avaliação</span>
+            <span class="material-symbols-outlined text-sm">arrow_forward</span>
+          </a>
+          <a href="https://wa.me/554196541288?text=Ol%C3%A1%2C%20Dra.%20Kimberly!%20Gostaria%20de%20tirar%20uma%20d%C3%BAvida%20sobre%20os%20procedimentos." target="_blank" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-[#25D366] hover:bg-[#20BA56] text-white text-xs font-semibold uppercase tracking-[0.15em] px-8 py-4 rounded shadow-md transition-all duration-300">
+            <span>Conversar no WhatsApp</span>
+            <span class="material-symbols-outlined text-sm">chat</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Global Footer -->
+  <footer class="bg-surface-container-low border-t border-outline-variant/50 pt-16 pb-12 text-on-surface-variant text-sm">
+    <div class="max-w-[1400px] mx-auto px-6 md:px-12 grid grid-cols-1 md:grid-cols-4 gap-10">
+      <!-- Col 1: Brand -->
+      <div class="space-y-4 md:col-span-2">
+        <div class="flex items-center gap-2">
+          <div class="w-8 h-8 rounded-full bg-secondary-container flex items-center justify-center font-serif text-primary font-bold text-sm">KV</div>
+          <span class="font-serif text-xl font-semibold text-on-surface">Dra. Kimberly Vieira</span>
+        </div>
+        <p class="text-xs text-primary uppercase tracking-widest font-semibold">Especialista em Harmonização Orofacial • CRO/PR 34185</p>
+        <p class="text-xs leading-relaxed max-w-md text-on-surface-variant">
+          Atendimento humanizado de alta precisão em Curitiba. Transformações que respeitam sua identidade e proporcionam harmonia estética e bem-estar.
+        </p>
+      </div>
+
+      <!-- Col 2: Navigation Links -->
+      <div class="space-y-3">
+        <h4 class="font-semibold text-xs text-on-surface uppercase tracking-widest">Navegação</h4>
+        <ul class="space-y-2 text-xs">
+          <li><a href="index.html" class="hover:text-primary transition-colors">Início</a></li>
+          <li><a href="procedimentos.html" class="text-primary font-semibold">Procedimentos & Tratamentos</a></li>
+          <li><a href="sobre.html" class="hover:text-primary transition-colors">Sobre a Dra. Kimberly</a></li>
+          <li><a href="contato.html" class="hover:text-primary transition-colors">Contato & Agendamento</a></li>
+        </ul>
+      </div>
+
+      <!-- Col 3: Contact & Address -->
+      <div class="space-y-3">
+        <h4 class="font-semibold text-xs text-on-surface uppercase tracking-widest">Consultório</h4>
+        <p class="text-xs leading-relaxed">
+          Av. do Batel, 1230 - Sala 405<br>
+          Batel, Curitiba - PR, 80420-090
+        </p>
+        <p class="text-xs font-semibold text-primary pt-1">
+          WhatsApp: <a href="https://wa.me/554196541288" class="underline hover:text-primary-dark">(41) 9654-1288</a>
+        </p>
+        <p class="text-[11px] text-on-surface-variant">Seg a Sex: 09h às 18h | Sáb: com agendamento</p>
+      </div>
+    </div>
+
+    <div class="max-w-[1400px] mx-auto px-6 md:px-12 mt-12 pt-6 border-t border-outline-variant/40 flex flex-col sm:flex-row items-center justify-between text-xs gap-4">
+      <p>© 2026 Dra. Kimberly Vieira - CRO/PR 34185. Todos os direitos reservados.</p>
+      <p class="text-[11px] text-on-surface-variant">Harmonização Facial & Odontologia Estética em Curitiba</p>
+    </div>
+  </footer>
+
+  <!-- Lightbox Modal -->
+  <div id="lightbox-modal" class="lightbox-modal" role="dialog" aria-modal="true">
+    <button type="button" data-close-lightbox class="absolute top-6 right-6 text-white text-3xl p-2 hover:opacity-80 focus:outline-none" aria-label="Fechar">
+      <span class="material-symbols-outlined text-4xl">close</span>
+    </button>
+    <div class="flex flex-col items-center max-w-4xl mx-auto">
+      <img id="lightbox-image" src="" alt="" class="max-h-[80vh] w-auto rounded-lg">
+      <p id="lightbox-caption" class="text-white/90 text-sm mt-3 text-center"></p>
+    </div>
+  </div>
+
+  <!-- Floating WhatsApp Button -->
+  <a href="https://wa.me/554196541288?text=Ol%C3%A1%2C%20Dra.%20Kimberly!%20Gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o." target="_blank" class="floating-whatsapp" aria-label="Falar no WhatsApp">
+    <div class="whatsapp-pulse"></div>
+    <span class="material-symbols-outlined text-2xl">chat</span>
+    <span class="hidden sm:inline">Agendar no WhatsApp</span>
+  </a>
+
+  <!-- Main JS -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

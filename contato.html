@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contato & Agendamento | Dra. Kimberly Vieira - Harmonização em Curitiba</title>
+  <meta name="description" content="Agende sua consulta com a Dra. Kimberly Vieira (CRO/PR 34185). Consultório exclusivo no Batel, Curitiba. WhatsApp direto: (41) 9654-1288.">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
+  
+  <!-- Material Symbols -->
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#785346",
+            "primary-dark": "#5a3c31",
+            "primary-container": "#936b5d",
+            "on-primary": "#ffffff",
+            "secondary": "#695b58",
+            "secondary-container": "#f2ded9",
+            "on-secondary-container": "#6f615d",
+            "tertiary": "#5c5c5c",
+            "tertiary-container": "#757474",
+            "dusty-rose": "#D4B1A7",
+            "soft-clay": "#C4A499",
+            "surface": "#fbf9f8",
+            "surface-dim": "#dbdad9",
+            "surface-container-low": "#f5f3f2",
+            "surface-container": "#efedec",
+            "surface-container-high": "#e9e8e7",
+            "surface-container-highest": "#e4e2e1",
+            "on-surface": "#1b1c1b",
+            "on-surface-variant": "#504440",
+            "deep-charcoal": "#1A1A1A",
+            "clinical-white": "#FFFFFF",
+            "outline": "#83746f",
+            "outline-variant": "#d5c3bd"
+          },
+          fontFamily: {
+            "serif": ["Playfair Display", "Georgia", "serif"],
+            "sans": ["Manrope", "system-ui", "sans-serif"],
+            "display": ["Playfair Display", "Georgia", "serif"],
+            "body": ["Manrope", "sans-serif"]
+          },
+          spacing: {
+            "margin-desktop": "5rem",
+            "margin-mobile": "1.5rem",
+            "section-gap": "6rem",
+            "gutter": "2rem"
+          }
+        }
+      }
+    }
+  </script>
+  
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="bg-surface text-on-surface font-sans antialiased overflow-x-hidden selection:bg-primary-container selection:text-white flex flex-col min-h-screen">
+
+  <!-- Top Navigation Bar -->
+  <header class="fixed top-0 left-0 w-full z-50 bg-surface/90 backdrop-blur-md border-b border-outline-variant/40 transition-all duration-300">
+    <div class="max-w-[1400px] mx-auto px-6 md:px-12 py-4 flex items-center justify-between">
+      <!-- Brand / Logo -->
+      <a href="index.html" class="flex items-center gap-3 group">
+        <div class="w-10 h-10 rounded-full bg-secondary-container/80 flex items-center justify-center border border-primary/20 group-hover:scale-105 transition-transform">
+          <span class="font-serif text-primary font-bold text-lg">KV</span>
+        </div>
+        <div class="flex flex-col">
+          <span class="font-serif text-lg md:text-xl tracking-wider text-on-surface font-semibold">Dra. Kimberly Vieira</span>
+          <span class="text-[10px] uppercase tracking-[0.2em] text-primary -mt-1 font-medium">Harmonização & Odontologia</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-on-surface-variant">
+        <a href="index.html" class="hover:text-primary transition-colors py-1">Início</a>
+        <a href="procedimentos.html" class="hover:text-primary transition-colors py-1">Procedimentos</a>
+        <a href="sobre.html" class="hover:text-primary transition-colors py-1">Sobre Mim</a>
+        <a href="contato.html" class="text-primary font-semibold border-b-2 border-primary pb-1 transition-colors">Contato & Agendamento</a>
+      </nav>
+
+      <!-- CTA Button -->
+      <div class="hidden lg:flex items-center gap-4">
+        <a href="#agendamento" class="inline-flex items-center gap-2 bg-deep-charcoal hover:bg-primary text-clinical-white text-xs font-semibold uppercase tracking-[0.15em] px-6 py-3 rounded transition-all duration-300 shadow-sm hover:shadow-md">
+          <span>Agendar Consulta</span>
+          <span class="material-symbols-outlined text-base">calendar_month</span>
+        </a>
+      </div>
+
+      <!-- Mobile Hamburger Button -->
+      <button type="button" data-toggle-menu class="md:hidden text-on-surface p-2 rounded-lg hover:bg-secondary-container/50 transition-colors focus:outline-none" aria-label="Abrir Menu">
+        <span class="material-symbols-outlined text-3xl">menu</span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Menu Drawer & Backdrop -->
+  <div id="mobile-menu-backdrop" class="fixed inset-0 bg-deep-charcoal/60 backdrop-blur-sm z-50 opacity-0 pointer-events-none transition-opacity duration-300"></div>
+  <aside id="mobile-menu" class="fixed top-0 right-0 h-full w-[80%] max-w-sm bg-surface z-50 transform translate-x-full transition-transform duration-300 ease-in-out flex flex-col justify-between p-8 border-l border-outline-variant/40 shadow-2xl">
+    <div>
+      <div class="flex items-center justify-between pb-6 border-b border-outline-variant/40">
+        <div class="flex items-center gap-2">
+          <div class="w-8 h-8 rounded-full bg-secondary-container flex items-center justify-center font-serif text-primary font-bold text-sm">KV</div>
+          <span class="font-serif font-semibold text-base text-on-surface">Dra. Kimberly Vieira</span>
+        </div>
+        <button type="button" data-close-menu class="p-2 text-on-surface hover:bg-secondary-container rounded-full" aria-label="Fechar Menu">
+          <span class="material-symbols-outlined">close</span>
+        </button>
+      </div>
+
+      <nav class="flex flex-col gap-4 mt-8 text-base font-medium">
+        <a href="index.html" class="text-on-surface-variant hover:text-primary py-2 px-3 rounded-lg hover:bg-secondary-container/30 transition-colors">Início</a>
+        <a href="procedimentos.html" class="text-on-surface-variant hover:text-primary py-2 px-3 rounded-lg hover:bg-secondary-container/30 transition-colors">Procedimentos</a>
+        <a href="sobre.html" class="text-on-surface-variant hover:text-primary py-2 px-3 rounded-lg hover:bg-secondary-container/30 transition-colors">Sobre Mim</a>
+        <a href="contato.html" class="text-primary font-semibold py-2 px-3 rounded-lg bg-secondary-container/40">Contato & Localização</a>
+      </nav>
+    </div>
+
+    <div class="space-y-4 pt-6 border-t border-outline-variant/40">
+      <a href="https://wa.me/554196541288?text=Ol%C3%A1%2C%20Dra.%20Kimberly!%20Gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o." target="_blank" class="w-full inline-flex items-center justify-center gap-2 bg-[#25D366] text-white text-sm font-semibold uppercase tracking-wider py-3.5 rounded shadow-sm">
+        <span class="material-symbols-outlined text-lg">chat</span>
+        <span>WhatsApp (41) 9654-1288</span>
+      </a>
+      <p class="text-center text-xs text-on-surface-variant">CRO/PR 34185 | Batel, Curitiba</p>
+    </div>
+  </aside>
+
+  <main class="flex-grow pt-24 md:pt-28">
+    <!-- CONTACT HERO INTRO -->
+    <section class="py-16 md:py-20 max-w-[1300px] mx-auto px-6 md:px-12">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+        <!-- Content -->
+        <div class="lg:col-span-7 space-y-6 reveal active">
+          <span class="text-xs font-bold uppercase tracking-[0.2em] text-primary">Atendimento Exclusivo</span>
+          <h1 class="font-serif text-3xl sm:text-5xl text-deep-charcoal font-semibold leading-tight">
+            Agende sua avaliação e realce sua <span class="italic text-primary font-normal">beleza natural</span>.
+          </h1>
+          <p class="text-base sm:text-lg text-on-surface-variant leading-relaxed">
+            Estamos prontos para receber você em nosso consultório no Batel, com todo o acolhimento, privacidade e excelência que você merece.
+          </p>
+
+          <!-- Direct Cards -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4">
+            <!-- WhatsApp Direct -->
+            <a href="https://wa.me/554196541288?text=Ol%C3%A1%2C%20Dra.%20Kimberly!%20Gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o." target="_blank" class="p-5 rounded-xl border border-outline-variant/40 bg-surface-container-low hover:bg-secondary-container/40 transition-all duration-300 flex items-start gap-4 group">
+              <div class="w-10 h-10 rounded-full bg-[#25D366]/20 text-[#25D366] flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform">
+                <span class="material-symbols-outlined text-2xl">chat</span>
+              </div>
+              <div>
+                <span class="text-xs text-on-surface-variant font-medium uppercase tracking-wider block">WhatsApp Direto</span>
+                <span class="text-base font-semibold text-on-surface group-hover:text-primary transition-colors">(41) 9654-1288</span>
+                <span class="text-[11px] text-primary font-medium block mt-0.5">Resposta Rápida</span>
+              </div>
+            </a>
+
+            <!-- Location Card -->
+            <div class="p-5 rounded-xl border border-outline-variant/40 bg-surface-container-low flex items-start gap-4">
+              <div class="w-10 h-10 rounded-full bg-secondary-container text-primary flex items-center justify-center flex-shrink-0">
+                <span class="material-symbols-outlined text-2xl">location_on</span>
+              </div>
+              <div>
+                <span class="text-xs text-on-surface-variant font-medium uppercase tracking-wider block">Consultório</span>
+                <span class="text-sm font-semibold text-on-surface">Batel, Curitiba - PR</span>
+                <span class="text-[11px] text-on-surface-variant block mt-0.5">Av. do Batel, 1230 - Sala 405</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Image in Clinic -->
+        <div class="lg:col-span-5 reveal reveal-delay-200">
+          <div class="relative rounded-2xl overflow-hidden shadow-lg border border-outline-variant/30 aspect-[4/5] max-w-md mx-auto">
+            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDOYn7zh7JtPvGnMb-3hXufcK739LwgdeVNzk6pLIXFqFnd3cBGkrB5UoFnsF8LhbhoqO-s1Q22G0_bZpmxp1ehXSezU9I4YHmcx0SECrmFuQ4Naosv8ltJYlNrN0yE9JulHSAkT1xwFExPFdt5fxfp77iPO4nYJAqFy5Kp7lo4eVZJP3yCBSIASFEi1eDlxNJVkL_MvKOX6LuvJDB0xo5U5GuJ7NAudfo16btjEC1BTLEUIbr67XBn4cKORd_OD0Dr1w" 
+                 alt="Dra. Kimberly Vieira em seu consultório no Batel" 
+                 class="w-full h-full object-cover">
+            <div class="absolute bottom-4 left-4 right-4 bg-surface/90 backdrop-blur-md p-3.5 rounded-xl border border-outline-variant/40 text-center shadow-sm">
+              <span class="text-xs font-semibold text-primary uppercase tracking-widest">Dra. Kimberly Vieira • CRO/PR 34185</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FORM & MAP SECTION -->
+    <section class="py-20 bg-surface-container-low border-t border-outline-variant/30" id="agendamento">
+      <div class="max-w-[1300px] mx-auto px-6 md:px-12">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+          
+          <!-- Booking Form -->
+          <div class="lg:col-span-7 bg-surface p-8 sm:p-10 rounded-2xl border border-outline-variant/40 shadow-sm relative overflow-hidden reveal">
+            <div class="space-y-2 mb-8">
+              <span class="text-xs font-bold uppercase tracking-[0.2em] text-primary">Formulário de Contato</span>
+              <h2 class="font-serif text-2xl sm:text-3xl font-semibold text-deep-charcoal">Solicite seu Horário</h2>
+              <p class="text-xs sm:text-sm text-on-surface-variant leading-relaxed">
+                Preencha os campos abaixo e você será direcionado para o WhatsApp com todos os detalhes organizados.
+              </p>
+            </div>
+
+            <form id="form-agendamento" class="space-y-6">
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                <!-- Nome -->
+                <div class="space-y-1">
+                  <label for="nome" class="text-xs font-semibold text-on-surface-variant uppercase tracking-wider">Nome Completo *</label>
+                  <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required class="w-full py-2.5 px-0 text-sm text-on-surface border-b border-outline-variant focus:border-primary placeholder:text-surface-dim">
+                </div>
+
+                <!-- Telefone -->
+                <div class="space-y-1">
+                  <label for="telefone" class="text-xs font-semibold text-on-surface-variant uppercase tracking-wider">WhatsApp / Telefone *</label>
+                  <input type="tel" id="telefone" name="telefone" placeholder="(41) 9____-____" required class="w-full py-2.5 px-0 text-sm text-on-surface border-b border-outline-variant focus:border-primary placeholder:text-surface-dim">
+                </div>
+              </div>
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                <!-- Procedimento -->
+                <div class="space-y-1">
+                  <label for="interesse" class="text-xs font-semibold text-on-surface-variant uppercase tracking-wider">Procedimento de Interesse</label>
+                  <select id="interesse" name="interesse" class="w-full py-2.5 px-0 text-sm text-on-surface border-b border-outline-variant focus:border-primary bg-transparent">
+                    <option value="Avaliação Geral / Diagnóstico Facial">Avaliação Geral / Diagnóstico Facial</option>
+                    <option value="Harmonização Facial Completa">Harmonização Facial Completa</option>
+                    <option value="Toxina Botulínica (Botox)">Toxina Botulínica (Botox)</option>
+                    <option value="Preenchimento com Ácido Hialurônico (Lábios, Malar, etc.)">Preenchimento Labial / Facial</option>
+                    <option value="Bioestimuladores de Colágeno (Radiesse / Sculptra)">Bioestimuladores de Colágeno</option>
+                    <option value="Lentes em Resina Composta">Lentes em Resina Composta</option>
+                    <option value="Clareamento Dental">Clareamento Dental</option>
+                    <option value="Outro Tratamento">Outro Tratamento</option>
+                  </select>
+                </div>
+
+                <!-- Data / Período de Preferência -->
+                <div class="space-y-1">
+                  <label for="data_preferencia" class="text-xs font-semibold text-on-surface-variant uppercase tracking-wider">Período de Preferência</label>
+                  <select id="data_preferencia" name="data_preferencia" class="w-full py-2.5 px-0 text-sm text-on-surface border-b border-outline-variant focus:border-primary bg-transparent">
+                    <option value="Manhã (09h às 12h)">Manhã (09h às 12h)</option>
+                    <option value="Tarde (13h às 18h)">Tarde (13h às 18h)</option>
+                    <option value="Sábado (09h às 13h)">Sábado (09h às 13h)</option>
+                    <option value="Qualquer horário disponível">Qualquer horário disponível</option>
+                  </select>
+                </div>
+              </div>
+
+              <!-- Mensagem / Dúvida -->
+              <div class="space-y-1">
+                <label for="mensagem" class="text-xs font-semibold text-on-surface-variant uppercase tracking-wider">Mensagem ou Dúvida (Opcional)</label>
+                <textarea id="mensagem" name="mensagem" rows="3" placeholder="Conte-nos o que você gostaria de melhorar ou suas dúvidas..." class="w-full py-2.5 px-0 text-sm text-on-surface border-b border-outline-variant focus:border-primary resize-none placeholder:text-surface-dim"></textarea>
+              </div>
+
+              <div class="pt-2">
+                <button type="submit" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-deep-charcoal hover:bg-primary text-clinical-white text-xs font-semibold uppercase tracking-[0.15em] px-10 py-4 rounded shadow-md transition-all duration-300">
+                  <span>Enviar pelo WhatsApp</span>
+                  <span class="material-symbols-outlined text-base">send</span>
+                </button>
+              </div>
+            </form>
+          </div>
+
+          <!-- Clinic Location & Maps -->
+          <div class="lg:col-span-5 space-y-6 reveal reveal-delay-200">
+            <div class="bg-surface p-8 rounded-2xl border border-outline-variant/40 shadow-sm space-y-6">
+              <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-full bg-secondary-container text-primary flex items-center justify-center flex-shrink-0">
+                  <span class="material-symbols-outlined text-2xl">apartment</span>
+                </div>
+                <div>
+                  <h3 class="font-serif text-xl font-semibold text-on-surface">Clínica Batel</h3>
+                  <span class="text-xs text-primary font-medium">Curitiba - PR</span>
+                </div>
+              </div>
+
+              <div class="space-y-4 text-xs sm:text-sm text-on-surface-variant border-t border-outline-variant/30 pt-4">
+                <div>
+                  <strong class="text-on-surface block text-xs uppercase tracking-wider mb-1">Endereço</strong>
+                  <p class="leading-relaxed">
+                    Av. do Batel, 1230 - Sala 405<br>
+                    Batel, Curitiba - PR, 80420-090
+                  </p>
+                </div>
+
+                <div>
+                  <strong class="text-on-surface block text-xs uppercase tracking-wider mb-1">Horário de Atendimento</strong>
+                  <p class="leading-relaxed">
+                    Segunda a Sexta-feira: <strong>09h às 18h</strong><br>
+                    Sábados: <strong>09h às 13h</strong> (com agendamento prévio)
+                  </p>
+                </div>
+
+                <div>
+                  <strong class="text-on-surface block text-xs uppercase tracking-wider mb-1">Contato Telefônico & WhatsApp</strong>
+                  <a href="https://wa.me/554196541288" target="_blank" class="text-primary font-semibold text-base hover:underline block">
+                    (41) 9654-1288
+                  </a>
+                </div>
+              </div>
+
+              <!-- Map View / Integration -->
+              <div class="rounded-xl overflow-hidden border border-outline-variant/40 h-56 relative group">
+                <iframe 
+                  title="Localização do Consultório no Batel, Curitiba"
+                  src="https://maps.google.com/maps?q=Av.%20do%20Batel,%201230,%20Curitiba%20-%20PR&t=&z=16&ie=UTF8&iwloc=&output=embed" 
+                  class="w-full h-full border-0" 
+                  loading="lazy" 
+                  referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Global Footer -->
+  <footer class="bg-surface-container-low border-t border-outline-variant/50 pt-16 pb-12 text-on-surface-variant text-sm">
+    <div class="max-w-[1400px] mx-auto px-6 md:px-12 grid grid-cols-1 md:grid-cols-4 gap-10">
+      <!-- Col 1: Brand -->
+      <div class="space-y-4 md:col-span-2">
+        <div class="flex items-center gap-2">
+          <div class="w-8 h-8 rounded-full bg-secondary-container flex items-center justify-center font-serif text-primary font-bold text-sm">KV</div>
+          <span class="font-serif text-xl font-semibold text-on-surface">Dra. Kimberly Vieira</span>
+        </div>
+        <p class="text-xs text-primary uppercase tracking-widest font-semibold">Especialista em Harmonização Orofacial • CRO/PR 34185</p>
+        <p class="text-xs leading-relaxed max-w-md text-on-surface-variant">
+          Atendimento humanizado de alta precisão em Curitiba. Transformações que respeitam sua identidade e proporcionam harmonia estética e bem-estar.
+        </p>
+      </div>
+
+      <!-- Col 2: Navigation Links -->
+      <div class="space-y-3">
+        <h4 class="font-semibold text-xs text-on-surface uppercase tracking-widest">Navegação</h4>
+        <ul class="space-y-2 text-xs">
+          <li><a href="index.html" class="hover:text-primary transition-colors">Início</a></li>
+          <li><a href="procedimentos.html" class="hover:text-primary transition-colors">Procedimentos & Tratamentos</a></li>
+          <li><a href="sobre.html" class="hover:text-primary transition-colors">Sobre a Dra. Kimberly</a></li>
+          <li><a href="contato.html" class="text-primary font-semibold">Contato & Agendamento</a></li>
+        </ul>
+      </div>
+
+      <!-- Col 3: Contact & Address -->
+      <div class="space-y-3">
+        <h4 class="font-semibold text-xs text-on-surface uppercase tracking-widest">Consultório</h4>
+        <p class="text-xs leading-relaxed">
+          Av. do Batel, 1230 - Sala 405<br>
+          Batel, Curitiba - PR, 80420-090
+        </p>
+        <p class="text-xs font-semibold text-primary pt-1">
+          WhatsApp: <a href="https://wa.me/554196541288" class="underline hover:text-primary-dark">(41) 9654-1288</a>
+        </p>
+        <p class="text-[11px] text-on-surface-variant">Seg a Sex: 09h às 18h | Sáb: com agendamento</p>
+      </div>
+    </div>
+
+    <div class="max-w-[1400px] mx-auto px-6 md:px-12 mt-12 pt-6 border-t border-outline-variant/40 flex flex-col sm:flex-row items-center justify-between text-xs gap-4">
+      <p>© 2026 Dra. Kimberly Vieira - CRO/PR 34185. Todos os direitos reservados.</p>
+      <p class="text-[11px] text-on-surface-variant">Harmonização Facial & Odontologia Estética em Curitiba</p>
+    </div>
+  </footer>
+
+  <!-- Lightbox Modal -->
+  <div id="lightbox-modal" class="lightbox-modal" role="dialog" aria-modal="true">
+    <button type="button" data-close-lightbox class="absolute top-6 right-6 text-white text-3xl p-2 hover:opacity-80 focus:outline-none" aria-label="Fechar">
+      <span class="material-symbols-outlined text-4xl">close</span>
+    </button>
+    <div class="flex flex-col items-center max-w-4xl mx-auto">
+      <img id="lightbox-image" src="" alt="" class="max-h-[80vh] w-auto rounded-lg">
+      <p id="lightbox-caption" class="text-white/90 text-sm mt-3 text-center"></p>
+    </div>
+  </div>
+
+  <!-- Floating WhatsApp Button -->
+  <a href="https://wa.me/554196541288?text=Ol%C3%A1%2C%20Dra.%20Kimberly!%20Gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o." target="_blank" class="floating-whatsapp" aria-label="Falar no WhatsApp">
+    <div class="whatsapp-pulse"></div>
+    <span class="material-symbols-outlined text-2xl">chat</span>
+    <span class="hidden sm:inline">Agendar no WhatsApp</span>
+  </a>
+
+  <!-- Main JS -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sobre Mim | Dra. Kimberly Vieira - Harmonização Orofacial em Curitiba</title>
+  <meta name="description" content="Conheça a Dra. Kimberly Vieira (CRO/PR 34185), Especialista em Harmonização Orofacial e Odontologia Estética em Curitiba. Trajetória, filosofia e atendimento exclusivo no Batel.">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
+  
+  <!-- Material Symbols -->
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#785346",
+            "primary-dark": "#5a3c31",
+            "primary-container": "#936b5d",
+            "on-primary": "#ffffff",
+            "secondary": "#695b58",
+            "secondary-container": "#f2ded9",
+            "on-secondary-container": "#6f615d",
+            "tertiary": "#5c5c5c",
+            "tertiary-container": "#757474",
+            "dusty-rose": "#D4B1A7",
+            "soft-clay": "#C4A499",
+            "surface": "#fbf9f8",
+            "surface-dim": "#dbdad9",
+            "surface-container-low": "#f5f3f2",
+            "surface-container": "#efedec",
+            "surface-container-high": "#e9e8e7",
+            "surface-container-highest": "#e4e2e1",
+            "on-surface": "#1b1c1b",
+            "on-surface-variant": "#504440",
+            "deep-charcoal": "#1A1A1A",
+            "clinical-white": "#FFFFFF",
+            "outline": "#83746f",
+            "outline-variant": "#d5c3bd"
+          },
+          fontFamily: {
+            "serif": ["Playfair Display", "Georgia", "serif"],
+            "sans": ["Manrope", "system-ui", "sans-serif"],
+            "display": ["Playfair Display", "Georgia", "serif"],
+            "body": ["Manrope", "sans-serif"]
+          },
+          spacing: {
+            "margin-desktop": "5rem",
+            "margin-mobile": "1.5rem",
+            "section-gap": "6rem",
+            "gutter": "2rem"
+          }
+        }
+      }
+    }
+  </script>
+  
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="bg-surface text-on-surface font-sans antialiased overflow-x-hidden selection:bg-primary-container selection:text-white">
+
+  <!-- Top Navigation Bar -->
+  <header class="fixed top-0 left-0 w-full z-50 bg-surface/90 backdrop-blur-md border-b border-outline-variant/40 transition-all duration-300">
+    <div class="max-w-[1400px] mx-auto px-6 md:px-12 py-4 flex items-center justify-between">
+      <!-- Brand / Logo -->
+      <a href="index.html" class="flex items-center gap-3 group">
+        <div class="w-10 h-10 rounded-full bg-secondary-container/80 flex items-center justify-center border border-primary/20 group-hover:scale-105 transition-transform">
+          <span class="font-serif text-primary font-bold text-lg">KV</span>
+        </div>
+        <div class="flex flex-col">
+          <span class="font-serif text-lg md:text-xl tracking-wider text-on-surface font-semibold">Dra. Kimberly Vieira</span>
+          <span class="text-[10px] uppercase tracking-[0.2em] text-primary -mt-1 font-medium">Harmonização & Odontologia</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-on-surface-variant">
+        <a href="index.html" class="hover:text-primary transition-colors py-1">Início</a>
+        <a href="procedimentos.html" class="hover:text-primary transition-colors py-1">Procedimentos</a>
+        <a href="sobre.html" class="text-primary font-semibold border-b-2 border-primary pb-1 transition-colors">Sobre Mim</a>
+        <a href="contato.html" class="hover:text-primary transition-colors py-1">Contato & Agendamento</a>
+      </nav>
+
+      <!-- CTA Button -->
+      <div class="hidden lg:flex items-center gap-4">
+        <a href="contato.html" class="inline-flex items-center gap-2 bg-deep-charcoal hover:bg-primary text-clinical-white text-xs font-semibold uppercase tracking-[0.15em] px-6 py-3 rounded transition-all duration-300 shadow-sm hover:shadow-md">
+          <span>Agendar Consulta</span>
+          <span class="material-symbols-outlined text-base">calendar_month</span>
+        </a>
+      </div>
+
+      <!-- Mobile Hamburger Button -->
+      <button type="button" data-toggle-menu class="md:hidden text-on-surface p-2 rounded-lg hover:bg-secondary-container/50 transition-colors focus:outline-none" aria-label="Abrir Menu">
+        <span class="material-symbols-outlined text-3xl">menu</span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Menu Drawer & Backdrop -->
+  <div id="mobile-menu-backdrop" class="fixed inset-0 bg-deep-charcoal/60 backdrop-blur-sm z-50 opacity-0 pointer-events-none transition-opacity duration-300"></div>
+  <aside id="mobile-menu" class="fixed top-0 right-0 h-full w-[80%] max-w-sm bg-surface z-50 transform translate-x-full transition-transform duration-300 ease-in-out flex flex-col justify-between p-8 border-l border-outline-variant/40 shadow-2xl">
+    <div>
+      <div class="flex items-center justify-between pb-6 border-b border-outline-variant/40">
+        <div class="flex items-center gap-2">
+          <div class="w-8 h-8 rounded-full bg-secondary-container flex items-center justify-center font-serif text-primary font-bold text-sm">KV</div>
+          <span class="font-serif font-semibold text-base text-on-surface">Dra. Kimberly Vieira</span>
+        </div>
+        <button type="button" data-close-menu class="p-2 text-on-surface hover:bg-secondary-container rounded-full" aria-label="Fechar Menu">
+          <span class="material-symbols-outlined">close</span>
+        </button>
+      </div>
+
+      <nav class="flex flex-col gap-4 mt-8 text-base font-medium">
+        <a href="index.html" class="text-on-surface-variant hover:text-primary py-2 px-3 rounded-lg hover:bg-secondary-container/30 transition-colors">Início</a>
+        <a href="procedimentos.html" class="text-on-surface-variant hover:text-primary py-2 px-3 rounded-lg hover:bg-secondary-container/30 transition-colors">Procedimentos</a>
+        <a href="sobre.html" class="text-primary font-semibold py-2 px-3 rounded-lg bg-secondary-container/40">Sobre Mim</a>
+        <a href="contato.html" class="text-on-surface-variant hover:text-primary py-2 px-3 rounded-lg hover:bg-secondary-container/30 transition-colors">Contato & Localização</a>
+      </nav>
+    </div>
+
+    <div class="space-y-4 pt-6 border-t border-outline-variant/40">
+      <a href="https://wa.me/554196541288?text=Ol%C3%A1%2C%20Dra.%20Kimberly!%20Gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o." target="_blank" class="w-full inline-flex items-center justify-center gap-2 bg-[#25D366] text-white text-sm font-semibold uppercase tracking-wider py-3.5 rounded shadow-sm">
+        <span class="material-symbols-outlined text-lg">chat</span>
+        <span>WhatsApp (41) 9654-1288</span>
+      </a>
+      <p class="text-center text-xs text-on-surface-variant">CRO/PR 34185 | Batel, Curitiba</p>
+    </div>
+  </aside>
+
+  <main class="pt-24 md:pt-28">
+    <!-- ABOUT HERO SECTION -->
+    <section class="py-16 md:py-24 max-w-[1300px] mx-auto px-6 md:px-12">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+        <!-- Text details -->
+        <div class="lg:col-span-7 space-y-6 reveal active">
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-secondary-container/80 border border-primary/20">
+            <span class="text-xs font-semibold tracking-widest text-primary uppercase">CRO/PR 34185</span>
+          </div>
+
+          <h1 class="font-serif text-3xl sm:text-5xl text-deep-charcoal font-semibold leading-tight">
+            A Arte da Harmonização e a <span class="italic text-primary font-normal">Ciência do Cuidado</span>
+          </h1>
+
+          <p class="text-base sm:text-lg text-on-surface-variant leading-relaxed">
+            Olá, sou a <strong>Dra. Kimberly Vieira</strong> (CRO/PR 34185), cirurgiã-dentista e especialista em Harmonização Orofacial e Odontologia Estética.
+          </p>
+
+          <p class="text-base text-on-surface-variant leading-relaxed">
+            Minha trajetória é guiada por uma paixão genuína: ajudar cada pessoa a se olhar no espelho e enxergar a sua melhor versão. Acredito firmemente que os melhores procedimentos estéticos são aqueles que valorizam os seus traços naturais sem descaracterizar sua essência e expressão.
+          </p>
+
+          <div class="flex flex-wrap gap-2 pt-2">
+            <span class="bg-secondary-container text-primary text-xs font-semibold px-3.5 py-1.5 rounded-full uppercase tracking-wider">Harmonização Orofacial</span>
+            <span class="bg-secondary-container text-primary text-xs font-semibold px-3.5 py-1.5 rounded-full uppercase tracking-wider">Odontologia Estética</span>
+            <span class="bg-secondary-container text-primary text-xs font-semibold px-3.5 py-1.5 rounded-full uppercase tracking-wider">Bioestimuladores</span>
+            <span class="bg-secondary-container text-primary text-xs font-semibold px-3.5 py-1.5 rounded-full uppercase tracking-wider">Lentes em Resina</span>
+          </div>
+
+          <div class="pt-4 flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
+            <a href="contato.html" class="inline-flex items-center justify-center gap-2 bg-deep-charcoal hover:bg-primary text-clinical-white text-xs font-semibold uppercase tracking-[0.15em] px-8 py-4 rounded shadow-md transition-all duration-300">
+              <span>Agendar Avaliação</span>
+              <span class="material-symbols-outlined text-sm">calendar_month</span>
+            </a>
+            <a href="https://wa.me/554196541288" target="_blank" class="inline-flex items-center justify-center gap-2 border border-primary text-primary hover:bg-secondary-container/40 text-xs font-semibold uppercase tracking-[0.15em] px-8 py-4 rounded transition-all duration-300">
+              <span>Falar Diretamente</span>
+              <span class="material-symbols-outlined text-sm">chat</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Portrait Image -->
+        <div class="lg:col-span-5 reveal reveal-delay-200">
+          <div class="relative rounded-2xl overflow-hidden shadow-xl border border-outline-variant/30 aspect-[3/4] max-w-md mx-auto">
+            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBFAjAXDixMQ1EurHk8vqvn0xRXL_jwMYFlklX7bcnPJuVSoPUNqQvvuKp8CXdExDLlW8g5g7qGhix5NPBrI_T4bpoOQl76j9NR5HTd5G0ZSkA1QZ3vPTcstrpNlXhBaQG6m0f1Qy2VTvTt-4Fk19NcCQB_ALnVL59s53folXSKSqrDn0dbDUtiBL_EvZxTxzVepwb69_BviYbRXdABdOJwVptBAHFa26InnOIuYAAlOQuRn6a2iD1ujaiwClTETXjRZg" 
+                 alt="Dra. Kimberly Vieira - CRO/PR 34185" 
+                 class="w-full h-full object-cover">
+            <div class="absolute bottom-4 left-4 right-4 bg-surface/90 backdrop-blur-md p-4 rounded-xl border border-outline-variant/40 shadow-sm text-center">
+              <span class="font-serif font-semibold text-on-surface text-base block">Dra. Kimberly Vieira</span>
+              <span class="text-xs text-primary font-medium tracking-wider uppercase">CRO/PR 34185 • Curitiba - PR</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PILARES DE ATENDIMENTO / FILOSOFIA -->
+    <section class="py-20 bg-surface-container-low border-y border-outline-variant/30">
+      <div class="max-w-[1300px] mx-auto px-6 md:px-12">
+        <div class="text-center max-w-2xl mx-auto mb-16 space-y-3 reveal">
+          <span class="text-xs font-bold uppercase tracking-[0.2em] text-primary">Diferenciais Clínicos</span>
+          <h2 class="font-serif text-3xl sm:text-4xl font-semibold text-deep-charcoal">Nossos Pilares de Atendimento</h2>
+          <div class="w-16 h-0.5 bg-primary/40 mx-auto"></div>
+          <p class="text-on-surface-variant text-sm sm:text-base">Cada etapa da sua consulta é desenhada para oferecer segurança, conforto e encantamento.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Pilar 1 -->
+          <div class="bg-surface p-8 rounded-2xl border border-outline-variant/30 shadow-sm space-y-4 reveal hover:-translate-y-1.5 transition-all duration-300">
+            <div class="w-12 h-12 rounded-xl bg-secondary-container text-primary flex items-center justify-center">
+              <span class="material-symbols-outlined text-2xl">favorite</span>
+            </div>
+            <h3 class="font-serif text-xl font-semibold text-on-surface">Cuidado Individualizado</h3>
+            <p class="text-on-surface-variant text-sm leading-relaxed">
+              Não existem fórmulas prontas. Cada rosto possui proporções, dinâmica muscular e história únicas. Realizamos uma análise facial minuciosa antes de qualquer indicação.
+            </p>
+          </div>
+
+          <!-- Pilar 2 -->
+          <div class="bg-surface p-8 rounded-2xl border border-outline-variant/30 shadow-sm space-y-4 reveal reveal-delay-100 hover:-translate-y-1.5 transition-all duration-300">
+            <div class="w-12 h-12 rounded-xl bg-secondary-container text-primary flex items-center justify-center">
+              <span class="material-symbols-outlined text-2xl">verified</span>
+            </div>
+            <h3 class="font-serif text-xl font-semibold text-on-surface">Rigor Técnico & Segurança</h3>
+            <p class="text-on-surface-variant text-sm leading-relaxed">
+              Atualização constante com as técnicas e literaturas científicas mais modernas do mundo. Utilizamos apenas produtos padrão ouro com aprovação rigorosa da Anvisa.
+            </p>
+          </div>
+
+          <!-- Pilar 3 -->
+          <div class="bg-surface p-8 rounded-2xl border border-outline-variant/30 shadow-sm space-y-4 reveal reveal-delay-200 hover:-translate-y-1.5 transition-all duration-300">
+            <div class="w-12 h-12 rounded-xl bg-secondary-container text-primary flex items-center justify-center">
+              <span class="material-symbols-outlined text-2xl">spa</span>
+            </div>
+            <h3 class="font-serif text-xl font-semibold text-on-surface">Ambiente Aconchegante</h3>
+            <p class="text-on-surface-variant text-sm leading-relaxed">
+              Consultório localizado no nobre bairro Batel, em Curitiba, projetado para oferecer uma experiência relaxante, discreta e de total privacidade.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CLINICAL PRECISION & SPACE SECTION -->
+    <section class="py-20 md:py-28 max-w-[1300px] mx-auto px-6 md:px-12">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        <div class="lg:col-span-6 relative rounded-2xl overflow-hidden shadow-lg border border-outline-variant/30 h-80 sm:h-96 reveal">
+          <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuD4-UNVHpzBpa8rgzFjlYNPcDDtyj8H_ZkjLcRTz_vxa5DGmj7IG9rY5QQHKGPvxGm0YV2ET4-wcM5WvBnFJrD-4GhqNdETPiNrJ7MGj-YrOmjwffPX_E9eryNsRqWI93Tejx-NwR8obpXu_BhZb2NfhVQgGCTuP2UrRcbz0ohIgmsE-BiDwLL8vKWo91ceK8jGi2ewvNXT4gUHUD-YFkr-uCcLdZ_aG8L4u-eQeq9vPDXIUanNOBvJ1Bfq46uNN6EkLA" 
+               alt="Precisão técnica e protocolos rigorosos" 
+               class="w-full h-full object-cover">
+          <div class="absolute inset-0 bg-gradient-to-t from-deep-charcoal/80 via-transparent to-transparent flex flex-col justify-end p-8">
+            <h4 class="text-clinical-white font-serif text-2xl font-semibold">Precisão em Cada Detalhe</h4>
+            <p class="text-surface-container-low text-xs sm:text-sm mt-1">Procedimentos minimamente invasivos com recuperação rápida e conforto.</p>
+          </div>
+        </div>
+
+        <div class="lg:col-span-6 space-y-6 reveal reveal-delay-200">
+          <span class="text-xs font-bold uppercase tracking-[0.2em] text-primary">Excelência em Odontologia & Harmonização</span>
+          <h2 class="font-serif text-3xl sm:text-4xl text-on-surface font-semibold leading-tight">
+            Seu momento de cuidado e renovação
+          </h2>
+          <p class="text-on-surface-variant text-base leading-relaxed">
+            Acreditamos que a odontologia estética e a harmonização orofacial devem caminhar juntas. O sorriso e o contorno facial interagem continuamente para criar uma estética equilibrada e harmoniosa.
+          </p>
+          <p class="text-on-surface-variant text-base leading-relaxed">
+            Seja para suavizar linhas de expressão, restaurar o volume labial, estimular o colágeno natural ou transformar o sorriso com facetas em resina, estamos preparados para cuidar de você com toda a dedicação.
+          </p>
+          <div class="pt-2">
+            <a href="contato.html" class="inline-flex items-center gap-2 bg-primary hover:bg-primary-dark text-white text-xs font-semibold uppercase tracking-[0.15em] px-8 py-4 rounded shadow-sm transition-colors">
+              <span>Agendar Minha Consulta</span>
+              <span class="material-symbols-outlined text-sm">arrow_forward</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Global Footer -->
+  <footer class="bg-surface-container-low border-t border-outline-variant/50 pt-16 pb-12 text-on-surface-variant text-sm">
+    <div class="max-w-[1400px] mx-auto px-6 md:px-12 grid grid-cols-1 md:grid-cols-4 gap-10">
+      <!-- Col 1: Brand -->
+      <div class="space-y-4 md:col-span-2">
+        <div class="flex items-center gap-2">
+          <div class="w-8 h-8 rounded-full bg-secondary-container flex items-center justify-center font-serif text-primary font-bold text-sm">KV</div>
+          <span class="font-serif text-xl font-semibold text-on-surface">Dra. Kimberly Vieira</span>
+        </div>
+        <p class="text-xs text-primary uppercase tracking-widest font-semibold">Especialista em Harmonização Orofacial • CRO/PR 34185</p>
+        <p class="text-xs leading-relaxed max-w-md text-on-surface-variant">
+          Atendimento humanizado de alta precisão em Curitiba. Transformações que respeitam sua identidade e proporcionam harmonia estética e bem-estar.
+        </p>
+      </div>
+
+      <!-- Col 2: Navigation Links -->
+      <div class="space-y-3">
+        <h4 class="font-semibold text-xs text-on-surface uppercase tracking-widest">Navegação</h4>
+        <ul class="space-y-2 text-xs">
+          <li><a href="index.html" class="hover:text-primary transition-colors">Início</a></li>
+          <li><a href="procedimentos.html" class="hover:text-primary transition-colors">Procedimentos & Tratamentos</a></li>
+          <li><a href="sobre.html" class="text-primary font-semibold">Sobre a Dra. Kimberly</a></li>
+          <li><a href="contato.html" class="hover:text-primary transition-colors">Contato & Agendamento</a></li>
+        </ul>
+      </div>
+
+      <!-- Col 3: Contact & Address -->
+      <div class="space-y-3">
+        <h4 class="font-semibold text-xs text-on-surface uppercase tracking-widest">Consultório</h4>
+        <p class="text-xs leading-relaxed">
+          Av. do Batel, 1230 - Sala 405<br>
+          Batel, Curitiba - PR, 80420-090
+        </p>
+        <p class="text-xs font-semibold text-primary pt-1">
+          WhatsApp: <a href="https://wa.me/554196541288" class="underline hover:text-primary-dark">(41) 9654-1288</a>
+        </p>
+        <p class="text-[11px] text-on-surface-variant">Seg a Sex: 09h às 18h | Sáb: com agendamento</p>
+      </div>
+    </div>
+
+    <div class="max-w-[1400px] mx-auto px-6 md:px-12 mt-12 pt-6 border-t border-outline-variant/40 flex flex-col sm:flex-row items-center justify-between text-xs gap-4">
+      <p>© 2026 Dra. Kimberly Vieira - CRO/PR 34185. Todos os direitos reservados.</p>
+      <p class="text-[11px] text-on-surface-variant">Harmonização Facial & Odontologia Estética em Curitiba</p>
+    </div>
+  </footer>
+
+  <!-- Lightbox Modal -->
+  <div id="lightbox-modal" class="lightbox-modal" role="dialog" aria-modal="true">
+    <button type="button" data-close-lightbox class="absolute top-6 right-6 text-white text-3xl p-2 hover:opacity-80 focus:outline-none" aria-label="Fechar">
+      <span class="material-symbols-outlined text-4xl">close</span>
+    </button>
+    <div class="flex flex-col items-center max-w-4xl mx-auto">
+      <img id="lightbox-image" src="" alt="" class="max-h-[80vh] w-auto rounded-lg">
+      <p id="lightbox-caption" class="text-white/90 text-sm mt-3 text-center"></p>
+    </div>
+  </div>
+
+  <!-- Floating WhatsApp Button -->
+  <a href="https://wa.me/554196541288?text=Ol%C3%A1%2C%20Dra.%20Kimberly!%20Gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o." target="_blank" class="floating-whatsapp" aria-label="Falar no WhatsApp">
+    <div class="whatsapp-pulse"></div>
+    <span class="material-symbols-outlined text-2xl">chat</span>
+    <span class="hidden sm:inline">Agendar no WhatsApp</span>
+  </a>
+
+  <!-- Main JS -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,8 @@
+*.zip
+*.tar.gz
+stitch_website_status_tracker
+stitch_website_status_tracker/**
+wp-content
+wp-content/**
+.git
+.git/**

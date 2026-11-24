@@ -1,6 +1,6 @@
 # Site Dra. Kimberly Vieira
 
-Rascunho do site, ainda sem validação da Dra. Kimberly.
+Rascunho do site, ainda sem validação da Dra. Kimberly. As 4 páginas têm `noindex, nofollow` para ficar fora do Google. Remover essa tag quando ela validar.
 
 ## Onde está publicado
 
